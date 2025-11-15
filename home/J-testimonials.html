@@ -1,0 +1,121 @@
+<!-- ✅ BLOC — TÉMOIGNAGES CLIENTS (VERSION FR — CARROUSEL GAUCHE + FOND BLEU GLACÉ) -->
+<section class="sbt-block" style="background-color:#F3F6FB; padding:100px 0; overflow:hidden;">
+  <div class="sbt-container" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; gap:60px;">
+
+    <!-- 🎯 CARROUSEL TÉMOIGNAGES À GAUCHE -->
+    <div class="sbt-image" style="flex:1 1 50%; position:relative; border-radius:16px; overflow:hidden; box-shadow:0 6px 20px rgba(3,16,52,0.15); background:#ffffff; order:1;">
+      <div class="testimonial-carousel" style="position:relative; width:100%; height:420px; overflow:hidden;">
+
+        <!-- Vincent Gaillard -->
+        <div class="testimonial-slide active" style="position:absolute; inset:0; opacity:1;">
+          <div style="padding:40px; text-align:left; color:#031034; animation:fadeIn 1.2s ease;">
+            <p style="font-style:italic; font-size:18px; line-height:1.7;">
+              « Notre collaboration avec SBT Executive — à la fois sur plusieurs recrutements majeurs et sur la transformation organisationnelle de World Rowing — 
+              a été extrêmement positive, tant sur le plan humain que professionnel.  
+              Leur approche structurée et rigoureuse nous a permis d’identifier les bons candidats pour des postes clés et d’atteindre nos objectifs efficacement. »
+            </p>
+            <p style="margin-top:25px; font-weight:700; color:#45D1FF;">Vincent Gaillard</p>
+            <p style="margin:0;">Secrétaire Général<br><em>World Rowing, Suisse</em></p>
+          </div>
+        </div>
+
+        <!-- Florian Lamblin -->
+        <div class="testimonial-slide" style="position:absolute; inset:0; opacity:0;">
+          <div style="padding:40px; text-align:left; color:#031034; animation:fadeIn 1.2s ease;">
+            <p style="font-style:italic; font-size:18px; line-height:1.7;">
+              « Nous avons été très satisfaits de l’accompagnement de SBT Executive dans le recrutement de deux profils clés en Asie.  
+              L’équipe a pris le temps de co-construire le brief avec nous, de bien comprendre nos besoins,  
+              puis a travaillé avec une grande réactivité, précision et constance — en nous tenant informés à chaque étape du processus. »
+            </p>
+            <p style="margin-top:25px; font-weight:700; color:#45D1FF;">Florian Lamblin</p>
+            <p style="margin:0;">Directeur Exécutif<br><em>UTMB International, France</em></p>
+          </div>
+        </div>
+
+        <!-- Laurent Colette -->
+        <div class="testimonial-slide" style="position:absolute; inset:0; opacity:0;">
+          <div style="padding:40px; text-align:left; color:#031034; animation:fadeIn 1.2s ease;">
+            <p style="font-style:italic; font-size:18px; line-height:1.7;">
+              « Nous avons récemment travaillé avec SBT Executive sur plusieurs recrutements stratégiques et complexes — tous menés à bien.  
+              Leurs forces résident dans leur persévérance, leur écoute et leur capacité à challenger les idées reçues.  
+              Ils explorent des pistes moins évidentes mais extrêmement pertinentes.  
+              Je recommande vivement l’expertise et le professionnalisme de SBT Executive. »
+            </p>
+            <p style="margin-top:25px; font-weight:700; color:#45D1FF;">Laurent Colette</p>
+            <p style="margin:0;">Group COO<br><em>Right to Dream, Espagne / Ancien CEO – Olympique de Marseille, France</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 🧭 TEXTE À DROITE -->
+    <div class="sbt-text" style="flex:1 1 45%; color:#031034; font-family:'Lato',sans-serif; order:2;">
+      <h2 class="sbt-title" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; margin-bottom:10px;">
+        Témoignages
+      </h2>
+      <h3 class="sbt-subtitle" style="color:#45D1FF; font-size:22px; font-weight:500; margin-top:0;">
+        Ce que disent nos clients
+      </h3>
+      <p class="sbt-intro" style="font-size:17px; line-height:1.7; margin:25px 0;">
+        Plusieurs dirigeants et décideurs des secteurs du <strong>sport</strong>, de 
+        <strong>l’entertainment</strong> et du <strong>loisir</strong> partagent leur expérience avec SBT Executive.
+      </p>
+      <p class="sbt-body" style="font-size:16px; line-height:1.75; color:#333;">
+        À travers leurs témoignages, nos clients décrivent ce qui nous caractérise : la capacité à écouter, comprendre, 
+        challenger et exécuter avec excellence.  
+        <br><br>
+        Des <strong>dirigeants de clubs</strong> aux <strong>fédérations sportives internationales</strong> en passant par 
+        les <strong>organisateurs d’événements majeurs</strong>, ils soulignent la valeur d’un partenariat fondé sur 
+        la confiance, la précision et une ambition partagée.  
+        <br><br>
+        Au cœur de cette confiance, une conviction commune : dans un monde en mouvement, 
+        <strong>la performance reste avant tout une affaire d’humains</strong>.
+      </p>
+      <a href="/contact" class="sbt-button" style="display:inline-block; background:#45D1FF; color:#031034; font-weight:700; padding:14px 28px; border-radius:10px; text-decoration:none; transition:0.3s;">
+        Travaillons ensemble
+      </a>
+    </div>
+
+  </div>
+
+  <style>
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  .testimonial-slide {
+    transition: opacity 1s ease;
+  }
+  .testimonial-slide.active {
+    opacity: 1;
+  }
+  .testimonial-slide:not(.active) {
+    opacity: 0;
+  }
+  @media(max-width:960px){
+    .sbt-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .testimonial-carousel {
+      height: auto;
+      min-height: 400px;
+    }
+  }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".testimonial-slide");
+      let index = 0;
+      setInterval(() => {
+        slides[index].classList.remove("active");
+        slides[index].style.opacity = 0;
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+        slides[index].style.opacity = 1;
+      }, 7000);
+    });
+  </script>
+</section>

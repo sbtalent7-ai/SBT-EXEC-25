@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc E – Strategic Assessment | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA;
+  --dark:#2E3345;
+  --white:#FFFFFF;
+  --pearl:#ECEFF4;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--white); /* ✅ Fond global blanc */
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white); /* ✅ Fond blanc du bloc */
+}
+.assessment-card{
+  background:var(--pearl); /* ✅ Carte gris perle clair */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+  flex-direction:row; /* ✅ Image à droite */
+}
+.assessment-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+  position:relative;
+}
+.assessment-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.assessment-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.assessment-right img:hover{
+  transform:scale(1.03);
+}
+.assessment-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.assessment-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  letter-spacing:.3px;
+  margin:0 0 24px;
+}
+.assessment-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.assessment-left strong{color:var(--navy);}
+.opening-line{
+  font-size:16px;
+  font-weight:700;
+  color:var(--cyan); /* ✅ Bleu clair */
+  margin-bottom:10px;
+  text-transform:none; /* ✅ Minuscules sauf première lettre */
+}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.expand p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+}
+.cta{
+  margin-top:32px;
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .assessment-card{
+    flex-direction:column;
+  }
+  .assessment-left,.assessment-right{
+    flex:100%;
+    padding:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+
+<div class="assessment-card">
+
+  <!-- ✅ Colonne gauche (texte) -->
+  <div class="assessment-left">
+    <h1>Strategic Assessment</h1>
+    <p class="opening-line">À ce stade, nous analysons, évaluons et révélons le potentiel réel du leadership.</p>
+    <h2>Évaluer les leaders en profondeur et en contexte</h2>
+
+    <p><strong>Évaluer en profondeur les leaders, leur potentiel, leur alignement et leur capacité à performer</strong> dans votre contexte.</p>
+
+    <p>Lorsqu’il s’agit de sélectionner ou de développer un dirigeant, une <strong>évaluation rigoureuse et contextualisée</strong> est essentielle.  
+    Ce module peut être activé seul ou en complément d’une mission <strong>Executive Search</strong> afin d’affiner la sélection et la décision.</p>
+
+    <p>Chez <strong>SBT Executive</strong>, nous combinons des outils de référence — <strong>Saville, Talent Reveal, Hogan…</strong> — selon le poste, les enjeux et la maturité organisationnelle.  
+    Chaque évaluation est <strong>entièrement personnalisée</strong> et explore les compétences, les comportements, les motivations et le contexte culturel, offrant une lecture complète du <strong>potentiel de leadership</strong>.</p>
+
+    <button class="toggle" data-target="#assessment-expand">En savoir plus</button>
+
+    <div class="expand" id="assessment-expand">
+
+      <h3>💡 Problématiques clients</h3>
+      <ul>
+        <li>Comment objectiver une décision de recrutement ou de promotion ?</li>
+        <li>Comment anticiper la réussite ou les risques de rupture ?</li>
+        <li>Comment évaluer un leader externe face à la culture et aux valeurs internes ?</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <ul>
+        <li><strong>Analyse approfondie</strong> du contexte, des enjeux du rôle et de la culture d’entreprise.</li>
+        <li><strong>Sélection des outils</strong> les plus adaptés (Saville, Talent Reveal, Hogan…).</li>
+        <li><strong>Entretien individuel</strong> mené par un coach ou un psychologue du travail.</li>
+        <li><strong>Restitution structurée</strong> avec des insights concrets pour orienter la décision et le développement du leader.</li>
+      </ul>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li><strong>Décisions objectivées</strong> et sécurisées grâce à des données fiables.</li>
+        <li><strong>Alignement renforcé</strong> entre le leader, l’équipe et la culture de l’entreprise.</li>
+        <li><strong>Insights concrets</strong> pour développer les potentiels et renforcer la performance managériale.</li>
+        <li><strong>Réduction du risque de mismatch</strong> et meilleure stabilité dans la prise de poste.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Cédric Le Nest</strong> — Managing Partner, expert du recrutement et de l’évaluation de dirigeants dans les industries du sport et de l’entertainment.</li>
+        <li><strong>Antoine Legonnié</strong> — Senior Partner, spécialiste du leadership international et du développement des cadres dirigeants.</li>
+        <li><strong>Kris Perquy</strong> — Senior Advisor, psychologue du sport et du travail, expert de la performance et des transitions professionnelles.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#assessment-expand">▲ Réduire</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Colonne droite (image) -->
+  <div class="assessment-right">
+    <img src="https://i.imgur.com/US8dGYC.jpeg" alt="Strategic Assessment – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

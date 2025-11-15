@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc F – Jean-Laurent Bourquin & Jean-Baptiste Durand | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --light:#F5F7FA; --dark:#2E3345;
+  --white:#FFFFFF; --pearl:#ECEFF4; --title:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Lato',sans-serif;color:var(--dark);background:var(--navy);}
+
+/* Section fond bleu */
+.section-wrapper{
+  padding:30px 0 10px;background:var(--navy);position:relative;
+}
+.section-wrapper::after{
+  content:"";position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:rgba(69,209,255,0.3);
+}
+
+/* Grille */
+.experts-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  max-width:100%;margin:0 auto;padding:25px 0 25px;
+}
+
+/* Carte */
+.profile-card{
+  width:48%;background:var(--white);border-radius:18px;overflow:hidden;
+  margin-bottom:16px;transition:transform .25s ease,box-shadow .25s ease;
+  position:relative;box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.profile-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(69,209,255,0.25);}
+
+/* En-tête */
+.profile-header{
+  background:var(--pearl);padding:20px;color:var(--dark);position:relative;
+}
+.profile-photo{
+  position:absolute;top:20px;right:20px;width:120px;height:120px;
+  object-fit:contain;border:3px solid var(--cyan);border-radius:12px;
+  background:var(--white);box-shadow:0 0 15px rgba(69,209,255,.35);
+}
+.profile-info{padding-right:150px;}
+.profile-info h1{margin:0;font-size:28px;font-weight:900;color:var(--navy);}
+.profile-info h2{margin:4px 0 8px;font-size:17px;font-weight:700;color:var(--dark);}
+.primary-expertise{font-size:14px;font-weight:900;color:var(--cyan);}
+.location{font-weight:700;color:#5C637A;margin-top:6px;font-size:14px;}
+
+/* Intro */
+.intro{
+  display:block;margin-top:14px;padding-top:12px;border-top:1px solid rgba(6,19,56,.1);
+  font-size:14px;line-height:1.6;color:var(--dark);
+}
+.intro strong{color:var(--navy);}
+
+/* CTA */
+.cta{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:12px;margin-top:14px;}
+.cta a{
+  flex:1;background:var(--cyan);color:var(--navy);text-decoration:none;padding:9px 0;
+  text-align:center;border-radius:8px;font-weight:800;font-size:13px;transition:.18s;
+}
+.cta a:hover{background:var(--navy);color:var(--white);}
+.cta .toggle{
+  width:100%;margin-top:10px;background:none;border:1.6px solid var(--cyan);
+  color:var(--cyan);padding:9px 0;border-radius:8px;font-weight:900;font-size:13px;
+  cursor:pointer;text-align:center;
+}
+.cta .toggle:hover{background:var(--cyan);color:var(--navy);}
+
+/* Dépliants */
+.expand{display:none;background:var(--white);}
+.expand section{padding:18px 24px;border-bottom:1px solid #E6EBF2;}
+.expand section:nth-child(even){background:#F7F8FB;}
+.expand h3{
+  color:var(--cyan);font-weight:900;text-transform:uppercase;
+  margin:0 0 10px;text-shadow:0 0 10px rgba(69,209,255,.25);
+}
+.expand p,.expand li{font-size:14px;line-height:1.8;color:var(--dark);}
+.expand ul{list-style:none;padding:0;margin:8px 0 18px;}
+.expand li::before{content:"▸ ";color:var(--cyan);font-weight:900;}
+.close-row{text-align:center;margin:15px 0 25px;}
+.close-row .toggle{border-color:#d3d8e2;}
+
+/* Responsive */
+@media(max-width:960px){
+  .profile-card{width:100%;}
+  .profile-photo{position:relative;top:0;right:0;margin:0 auto 20px;display:block;}
+  .profile-info{padding-right:0;text-align:center;}
+  .cta a{flex:100%;}
+  .expand section{padding:18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="experts-grid">
+
+<!-- === JEAN-LAURENT BOURQUIN === -->
+<div class="profile-card" id="bourquin-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/MctOJj8.png" alt="Jean-Laurent Bourquin">
+    <div class="profile-info">
+      <h1>Jean-Laurent Bourquin</h1>
+      <h2>Senior Partner – Pilier “Engage” <span class="primary-expertise">| Board & Organisation Effectiveness</span></h2>
+      <p class="location">📍 Genève, Suisse — 🌍 Europe</p>
+    </div>
+    <p class="intro">
+      <strong>Plus de 25 ans d’expérience au sein de l’écosystème olympique et sportif international.</strong>  
+      Ancien dirigeant du <strong>Comité International Olympique (CIO)</strong>, il accompagne les <strong>fédérations et comités exécutifs</strong> sur les enjeux de <strong>gouvernance, d’alignement institutionnel et de leadership collectif</strong>.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/board-organisation-effectiveness" target="_blank">💼 En savoir plus<br><span>Board & Organisation Effectiveness</span></a>
+      <button class="toggle" data-target="#bourquin-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="bourquin-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Jean-Laurent Bourquin</strong> est <strong>Senior Partner</strong> au sein du pilier <em>“Engage – Board & Organisation Effectiveness”</em> de <strong>SBT Executive</strong>.  
+      Il accompagne les <strong>fédérations internationales, comités olympiques</strong> et <strong>institutions sportives</strong> dans leurs démarches de <strong>gouvernance, d’alignement stratégique</strong> et d’<strong>efficacité organisationnelle</strong>.</p>
+      <p><strong>Ancien dirigeant du CIO</strong>, il a coordonné les relations entre les <strong>fédérations internationales</strong> et les <strong>comités d’organisation olympiques</strong>.  
+      Aujourd’hui, il conseille les <strong>boards et comités exécutifs</strong> sur les enjeux de <em>diplomatie institutionnelle, de transformation</em> et de <em>leadership collectif</em>.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Gouvernance & leadership des conseils d’administration</li>
+        <li>Diagnostic exécutif & organisationnel</li>
+        <li>Alignement stratégique & gouvernance institutionnelle</li>
+        <li>Affaires olympiques & internationales</li>
+        <li>Coaching exécutif & médiation de crise</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>25 ans d’expérience de direction</strong> au sein du mouvement olympique et sportif international.</li>
+        <li><strong>Ancien cadre du CIO</strong> chargé de la coordination avec les fédérations internationales.</li>
+        <li><strong>Expert reconnu</strong> en diplomatie institutionnelle et management interculturel.</li>
+        <li><strong>Accompagne dirigeants et boards</strong> dans leurs projets de transformation et de gestion de crise.</li>
+        <li><strong>Partenaire de confiance</strong> des fédérations et comités olympiques à l’échelle internationale.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références sélectionnées</h3>
+      <ul>
+        <li>Comité International Olympique (CIO)</li>
+        <li>Fédérations sportives internationales</li>
+        <li>UEFA</li>
+        <li>EPFL</li>
+        <li>Race for Water Foundation</li>
+      </ul>
+      <p><em>Ces missions illustrent une expertise unique à la croisée de la gouvernance, de la diplomatie et du leadership organisationnel.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#bourquin-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+<!-- === JEAN-BAPTISTE DURAND === -->
+<div class="profile-card" id="jbd-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/QAt6kTZ.png" alt="Jean-Baptiste Durand">
+    <div class="profile-info">
+      <h1>Jean-Baptiste Durand</h1>
+      <h2>Senior Partner – Pilier “Prepare” <span class="primary-expertise">| Succession & Future Leadership</span></h2>
+      <p class="location">📍 Paris, France — 🌍 Europe</p>
+    </div>
+    <p class="intro">
+      <strong>15 ans d’expérience à la croisée du sport, de l’entertainment et de l’innovation digitale.</strong>  
+      Expert en <strong>stratégie IA</strong>, <strong>transformation organisationnelle</strong> et <strong>leadership du futur</strong>, il aide les dirigeants à construire des modèles durables à l’intersection de la <em>technologie, de la culture et de l’humain</em>.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/succession-future-leadership" target="_blank">💼 En savoir plus<br><span>Succession & Future Leadership</span></a>
+      <button class="toggle" data-target="#jbd-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="jbd-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Jean-Baptiste Durand</strong> est <strong>Senior Partner</strong> au sein du pilier <em>“Prepare – Succession & Future Leadership”</em> de <strong>SBT Executive</strong>.  
+      Il accompagne les <strong>comités exécutifs et conseils d’administration</strong> dans l’intégration stratégique de l’<strong>IA</strong> et des technologies émergentes.</p>
+      <p>Diplômé d’<strong>HEC Paris</strong>, du <strong>CDES</strong> et de l’<strong>ESCE</strong>, il cumule plus de <strong>15 ans d’expérience</strong> dans le <strong>sport</strong>, l’<strong>entertainment</strong> et le <strong>conseil en stratégie</strong>.  
+      Ancien dirigeant de <strong>Paris La Défense Arena</strong> et du <strong>Racing 92</strong>, il a piloté d’importants programmes d’<strong>innovation</strong> et de <strong>transformation digitale</strong>.</p>
+      <p>Il intervient auprès des dirigeants pour les aider à <strong>anticiper les mutations</strong>, <strong>aligner leurs équipes</strong> et <strong>intégrer l’IA de manière responsable et humaine</strong>.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Succession & Future Leadership</li>
+        <li>Stratégie IA & innovation responsable</li>
+        <li>Transformation organisationnelle & culturelle</li>
+        <li>Diagnostics exécutifs & stratégiques</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Expert en IA et stratégie</strong> avec une solide expérience en transformation digitale et gouvernance innovante.</li>
+        <li><strong>15 ans d’expérience</strong> dans le sport et l’entertainment (<strong>Paris La Défense Arena</strong>, <strong>Racing 92</strong>).</li>
+        <li><strong>Consultant en stratégie</strong> (<strong>Sopra Steria Next</strong>, <strong>EDMO Conseil</strong>, <strong>NuTerms</strong>) accompagnant les dirigeants dans la modernisation de leurs modèles.</li>
+        <li><strong>Acteur du “Future Leadership”</strong>, il promeut une intégration éthique et humaine de l’IA.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références sélectionnées</h3>
+      <ul>
+        <li>Paris La Défense Arena, Racing 92</li>
+        <li>Sopra Steria Next, EDMO Conseil, NuTerms</li>
+      </ul>
+      <p><em>Son parcours allie stratégie, innovation digitale et leadership transformationnel au service des organisations publiques et privées.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#jbd-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+</body>
+</html>

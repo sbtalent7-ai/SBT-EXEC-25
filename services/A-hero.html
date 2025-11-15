@@ -1,0 +1,129 @@
+<!-- ✅ HERO – NOS SERVICES (Version Française, style SBT premium) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- 🌌 Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/uClErVa.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- 🟦 Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 16, 52, 0.65);
+  "></div>
+
+  <!-- ✨ Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+    text-align: left;
+  ">
+    <div class="sbt-text" style="max-width: 700px;">
+
+      <!-- 🏁 Titre principal -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Deux leviers pour transformer durablement le leadership
+      </h2>
+
+      <!-- 🌿 Introduction courte -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        Nous attirons les bons talents — et nous créons, <strong>avec nos clients</strong>, les conditions de leur réussite.  
+        Chez <strong>SBT Executive</strong>, nous faisons du recrutement un <strong>véritable levier de performance durable</strong>,  
+        en renforçant à la fois l’impact du leadership et la cohésion collective.
+      </p>
+
+      <!-- 📖 Texte long (masqué par défaut) -->
+      <div id="longTextServicesFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Notre approche repose sur <strong>deux piliers étroitement liés</strong> :  
+          <br><br>
+          <strong style="color:#45D1FF;">1️⃣ Executive Search</strong> —  
+          Nous accompagnons les organisations dans l’identification et la sélection de dirigeants capables  
+          de <strong>porter la transformation et la croissance</strong>.  
+          Chaque mission va bien au-delà d’une simple recherche : nous <strong>clarifions le besoin stratégique</strong>,  
+          <strong>alignons les parties prenantes</strong> et <strong>sécurisons les phases de transition et d’intégration</strong>.  
+          Nos modules sur mesure — <em>Talent Mapping</em>, <em>Strategic Assessment</em>,  
+          <em>Strategic Executive Search</em> et <em>Strategic Onboarding</em> —  
+          permettent d’activer les bons leviers selon chaque contexte de leadership.
+          <br><br>
+          <strong style="color:#45D1FF;">2️⃣ Leadership Advisory</strong> —  
+          Nous aidons les leaders et leurs équipes à <strong>libérer pleinement leur potentiel</strong>.  
+          En combinant <strong>développement individuel</strong>, <strong>alignement collectif</strong>  
+          et <strong>préparation aux transformations culturelles</strong>,  
+          nous renforçons la <strong>performance humaine et organisationnelle</strong>.  
+          Nos méthodologies exclusives — <em>CRAFT</em>, <em>Future Leadership</em> et  
+          <em>Co-Creative Communication</em> — ont été conçues avec des experts de terrain  
+          et éprouvées dans des environnements internationaux variés.
+          <br><br>
+          Chaque pilier peut être <strong>activé de manière autonome ou combinée</strong> selon le contexte.  
+          Ensemble, ils traduisent notre mission :  
+          <strong style="color:#45D1FF;">créer les conditions pour que les leaders réussissent là où ils comptent le plus — dans le sport, l’entertainment et le loisir.</strong>
+          <br><br>
+          <strong style="color:#45D1FF;">Attirer. Créer. Impacter.</strong>
+        </p>
+      </div>
+
+      <!-- 🔘 Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnServicesFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/services" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          Découvrir nos deux piliers
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚙️ Script -->
+  <script>
+    document.getElementById('toggleTextBtnServicesFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextServicesFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

@@ -1,0 +1,98 @@
+<!-- ✅ BLOC F — NOS SECTEURS D’EXPERTISE (VERSION FR FINALE PREMIUM — FOND BLEU NUIT) -->
+<section class="sbt-block" style="background-color:#061338; padding:100px 0;">
+  <div class="sbt-container" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; gap:60px;">
+
+    <!-- 🖼️ CARROUSEL À GAUCHE -->
+    <div class="sbt-image" style="flex:1 1 50%; position:relative; border-radius:16px; overflow:hidden; box-shadow:0 6px 20px rgba(3,16,52,0.15); order:1;">
+      <div class="carousel-container" style="position:relative; width:100%; height:400px; overflow:hidden; border-radius:16px;">
+        <img src="https://i.imgur.com/i0EilN5.jpeg" alt="Industrie du sport" class="carousel-slide active" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:1; transition:opacity 1.5s ease-in-out; filter:brightness(70%) contrast(110%) saturate(105%);">
+        <img src="https://i.imgur.com/qCE2vP4.jpeg" alt="Industrie du divertissement" class="carousel-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.5s ease-in-out; filter:brightness(70%) contrast(110%) saturate(105%);">
+        <img src="https://i.imgur.com/rHBZjfe.jpeg" alt="Tourisme et loisirs" class="carousel-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.5s ease-in-out; filter:brightness(70%) contrast(110%) saturate(105%);">
+
+        <!-- FILTRE -->
+        <div class="carousel-filter" style="position:absolute; inset:0; background:rgba(3,16,52,0.25); z-index:2;"></div>
+
+        <!-- LÉGENDE DYNAMIQUE -->
+        <div class="carousel-caption" style="position:absolute; bottom:25px; left:50%; transform:translateX(-50%); color:white; text-align:center; z-index:3;">
+          <h4 id="carousel-caption-text-fr" style="font-family:'Playfair Display',serif; font-size:22px; margin:0;">Sport</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🧭 TEXTE À DROITE -->
+    <div class="sbt-text" style="flex:1 1 45%; color:#FFFFFF; font-family:'Lato',sans-serif; order:2; opacity:0; transform:translateY(30px); animation:fadeSlideIn 1s ease-out forwards;">
+      <p class="sbt-kicker" style="color:#45D1FF; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px;">Nos secteurs d’expertise</p>
+      <h2 class="sbt-title" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; margin-bottom:10px; color:#FFFFFF;">Là où la passion rencontre le leadership.</h2>
+
+      <p class="sbt-intro" style="font-size:17px; line-height:1.7; margin:25px 0; color:#D9D9D9;">
+        Nous opérons dans des univers où <strong>la passion guide la performance</strong> et où <strong>l’humain définit le succès</strong> : le <strong>sport</strong>, l’<strong>entertainment</strong> et les <strong>loisirs</strong>.
+      </p>
+
+      <div class="short-text" style="font-size:16px; line-height:1.75; color:#CCCCCC; margin-bottom:20px;">
+        Notre expertise se concentre sur trois écosystèmes où s’entrelacent énergie, créativité et exigence — <strong>le sport</strong>, <strong>l’entertainment</strong> et <strong>les loisirs</strong>.<br>
+        Ces mondes reposent sur l’<strong>émotion</strong> et l’<strong>engagement</strong> — là où le leadership transforme la vision en réussite.<br>
+        Nous accompagnons les organisations dans le <strong>recrutement de dirigeants</strong>, le <strong>développement du leadership</strong> et la <strong>transformation stratégique</strong> à travers ces domaines interconnectés.
+      </div>
+
+      <!-- CONTENU DÉPLIABLE -->
+      <div class="full-text" style="max-height:0; overflow:hidden; transition:max-height 0.8s ease;">
+        <p style="font-size:16px; line-height:1.75; color:#CCCCCC;">
+          En combinant <strong>Executive Search</strong> et <strong>Leadership Advisory</strong>, nous aidons nos clients à attirer, soutenir et fidéliser les leaders qui comptent.<br>
+          Nous comprenons le rythme propre à chaque industrie — ses publics, ses enjeux, son besoin d’authenticité.<br>
+          Notre vision transversale nous permet d’apporter <strong>des regards neufs</strong> et <strong>des leaders inspirants</strong> capables d’élever à la fois la performance et la culture.
+        </p>
+
+        <!-- ✳️ Transition premium -->
+        <p style="font-style:italic; color:#45D1FF; margin-top:30px;">
+          Derrière chaque secteur, il y a des femmes et des hommes — des experts et des leaders qui lui donnent vie. Ils sont le cœur de notre collectif.
+        </p>
+      </div>
+
+      <!-- BOUTONS CTA -->
+      <a href="#" class="sbt-button toggle-text" style="display:inline-block; background:#45D1FF; color:#031034; font-weight:700; padding:14px 28px; border-radius:10px; text-decoration:none; transition:0.3s; margin-right:10px;">Lire plus</a>
+      <a href="/nos-secteurs" class="sbt-button" style="display:inline-block; background:#FFFFFF; color:#031034; font-weight:700; padding:14px 28px; border-radius:10px; text-decoration:none; transition:0.3s;">Explorer nos secteurs</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🎬 JS -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // --- Carrousel ---
+  const slides = document.querySelectorAll(".carousel-slide");
+  const captions = ["Sport", "Entertainment", "Loisirs"];
+  const captionElement = document.getElementById("carousel-caption-text-fr");
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].style.opacity = 0;
+    index = (index + 1) % slides.length;
+    slides[index].style.opacity = 1;
+    captionElement.textContent = captions[index];
+  }, 5000);
+
+  // --- Texte dépliable ---
+  const toggleBtn = document.querySelector(".toggle-text");
+  const fullText = document.querySelector(".full-text");
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (fullText.style.maxHeight && fullText.style.maxHeight !== "0px") {
+      fullText.style.maxHeight = "0";
+      toggleBtn.textContent = "Lire plus";
+    } else {
+      fullText.style.maxHeight = fullText.scrollHeight + "px";
+      toggleBtn.textContent = "Réduire";
+    }
+  });
+});
+</script>
+
+<!-- 🌈 ANIMATION -->
+<style>
+@keyframes fadeSlideIn {
+  from { opacity:0; transform:translateY(30px); }
+  to { opacity:1; transform:translateY(0); }
+}
+</style>

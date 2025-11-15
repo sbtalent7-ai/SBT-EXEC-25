@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc – C.R.A.F².T. | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA; /* Gris perle */
+  --dark:#2E3345;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--white); /* Fond blanc */
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white);
+}
+.diagnostic-card{
+  background:var(--light); /* Carte gris perle */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+}
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--white);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  transition:transform .5s ease;
+}
+.diagnostic-right img:hover{
+  transform:scale(1.03);
+}
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  margin:0 0 24px;
+}
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.diagnostic-left strong{
+  color:var(--navy);
+}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left,.diagnostic-right{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- Colonne gauche -->
+  <div class="diagnostic-left">
+    <h1>C.R.A.F².T.</h1>
+    <h2>Créer les conditions de la motivation et de la performance durable</h2>
+
+    <p><strong>Développée par Fabrice Gatti</strong>, cette méthodologie unique replace l’humain au centre des dynamiques de leadership et des organisations. 
+    C.R.A.F².T. aide les dirigeants et les équipes à réconcilier performance, coopération et épanouissement durable, en s’appuyant sur vingt ans d’expérience dans le sport et l’entreprise, et sur des années de recherche en <strong>sociologie des organisations</strong> et <strong>psychologie de la motivation</strong>.</p>
+
+    <p>Fruit de réflexions approfondies sur le lien entre performance, bien-être et responsabilité, C.R.A.F².T. propose une lecture systémique et humaine des leviers qui nourrissent la motivation et l’engagement. 
+    Cette approche, présentée dans son ouvrage <em>S.O.S. Travail</em>, s’inscrit dans une vision plus large : transformer les organisations pour refonder une société plus équilibrée et responsable.</p>
+
+    <button class="toggle" data-target="#craft-expand">En savoir plus</button>
+
+    <div class="expand" id="craft-expand">
+
+      <h3>💡 Les six leviers de C.R.A.F².T.</h3>
+      <ul>
+        <li><strong>Compétence</strong> — renforcer le sentiment de progression et la confiance en sa maîtrise.</li>
+        <li><strong>Relation</strong> — construire des liens sincères et fondés sur la reconnaissance mutuelle.</li>
+        <li><strong>Autonomie</strong> — donner à chacun la liberté d’agir dans un cadre clair et sécurisant.</li>
+        <li><strong>Finalité</strong> — redonner du sens à l’action individuelle et collective.</li>
+        <li><strong>Frame</strong> — créer un environnement porteur de clarté et de stabilité.</li>
+        <li><strong>Talent</strong> — identifier, révéler et développer les forces singulières de chacun.</li>
+      </ul>
+
+      <p>En activant ces six dimensions, C.R.A.F².T. aide les leaders à restaurer un climat de confiance, libérer la coopération et reconnecter performance et plaisir au travail. 
+      Déployée auprès de dirigeants, de COMEX et d’organisations du sport, de l’entertainment et de l’entreprise, cette méthode redonne du sens à la performance collective et à la responsabilité individuelle.</p>
+
+      <h3>👤 À propos de Fabrice Gatti</h3>
+      <p>Leading Partner de SBT Executive, conférencier et auteur de <em>S.O.S. Travail</em>, Fabrice Gatti explore depuis plus de vingt ans les liens entre performance, motivation et épanouissement. 
+      Ses travaux s’appuient sur une recherche multidisciplinaire et une expérience internationale au service d’un leadership plus conscient, collaboratif et durable.</p>
+
+      <div class="cta">
+        <a href="/our-services/leadership-advisory/engage/board-organizational-effectiveness" target="_blank">📘 Explorer nos solutions en Board & Organizational Effectiveness</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#craft-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne droite -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/CI1XsYw.png" alt="Méthodologie C.R.A.F².T. – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

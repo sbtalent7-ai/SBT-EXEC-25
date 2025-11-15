@@ -1,0 +1,96 @@
+<!-- BLOC C – Entertainment : Accompagner ceux qui façonnent l’imaginaire collectif -->
+<section class="sbt-block sbt-split" style="background:#FFFFFF; padding:80px 0;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:0 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap;
+  ">
+
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px; font-family:'Lato', sans-serif;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display', serif;
+        font-size:36px; color:#031034; margin:0 0 16px; line-height:1.3;
+      ">
+        Accompagner ceux qui <span style="color:#45D1FF;">façonnent l’imaginaire collectif</span>
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-intro" style="
+        font-size:19px; line-height:1.75; color:#2B2F3A; margin:0 0 24px;
+      ">
+        <strong>Studios, plateformes, spectacles vivants, jeux vidéo…</strong>  
+        nous accompagnons les <strong style="color:#45D1FF;">créateurs d’émotions et de culture</strong>,  
+        au croisement de <strong>l’art</strong>, de <strong>la technologie</strong> et de <strong>la stratégie</strong>.  
+        Dans un univers en constante évolution, nous aidons les dirigeants et leurs équipes  
+        à <strong>transformer la créativité en impact</strong> et la <strong>vision en expérience partagée</strong>.
+      </p>
+
+      <!-- Texte long (caché par défaut) -->
+      <div id="blocC-long" style="display:none;">
+        <p class="sbt-body" style="
+          font-size:17.5px; line-height:1.9; color:#434A57; margin:0 0 28px;
+        ">
+          L’<strong>industrie de l’entertainment</strong> est un écosystème en perpétuelle effervescence —  
+          un monde où <strong style="color:#45D1FF;">la créativité, la technologie et l’émotion</strong> se rencontrent  
+          pour façonner notre imaginaire collectif.<br><br>
+
+          Chez <strong>SBT Executive</strong>, nous accompagnons celles et ceux qui orchestrent cette alchimie subtile  
+          entre <strong>inspiration</strong>, <strong>innovation</strong> et <strong>performance</strong>.  
+          Notre équipe intervient auprès de <strong>studios de production</strong>,  
+          <strong>plateformes de streaming</strong>, <strong>maisons de disques</strong>,  
+          <strong>compagnies de spectacle vivant</strong>, <strong>acteurs du jeu vidéo</strong>,  
+          <strong>agences artistiques</strong>, ainsi que <strong>structures indépendantes</strong>  
+          et <strong>groupes internationaux</strong>.<br><br>
+
+          Nos missions couvrent les fonctions clés du <strong>leadership créatif et opérationnel</strong> :  
+          <strong>direction générale</strong>, <strong>direction artistique</strong>,  
+          <strong>marketing</strong>, <strong>production</strong>,  
+          <strong>ressources humaines</strong> et <strong>transformation</strong>.  
+          Nous aidons les organisations à <strong style="color:#45D1FF;">identifier et développer des leaders</strong>  
+          capables d’incarner une vision, de fédérer les équipes et de porter la création vers de nouveaux horizons.<br><br>
+
+          Dans un univers où la concurrence se joue autant sur le <strong>talent</strong>  
+          que sur la <strong>capacité à émouvoir</strong>,  
+          nous croyons que la réussite naît d’un <strong>leadership profondément humain</strong> —  
+          celui qui <strong style="color:#45D1FF;">fait résonner la vision avec les émotions</strong>  
+          et transforme la création en <strong>expérience partagée</strong>.
+        </p>
+      </div>
+
+      <!-- Bouton "En savoir plus" -->
+      <button id="toggleBlocC" style="
+        background:none; border:none; color:#45D1FF; font-weight:600;
+        cursor:pointer; margin-bottom:24px; font-size:16px;
+      " onclick="
+        const longText=document.getElementById('blocC-long');
+        longText.style.display = longText.style.display==='none' ? 'block' : 'none';
+        this.textContent = this.textContent==='En savoir plus' ? 'Réduire' : 'En savoir plus';
+      ">
+        En savoir plus
+      </button>
+      <br>
+
+      <!-- CTA -->
+      <a href='/contact' class="sbt-button" style="
+        display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+        font-weight:700; padding:14px 32px; border-radius:36px; font-size:16px;
+        letter-spacing:0.2px; transition:.25s;
+      " onmouseover="this.style.background='#ffffff'; this.style.color='#031034';" onmouseout="this.style.background='#45D1FF'; this.style.color='#031034';">
+        🤝 Prendre un moment pour une discussion confidentielle
+      </a>
+    </div>
+
+    <!-- Colonne image -->
+    <div class="sbt-image" style="
+      flex:1 1 520px; min-width:320px; position:relative;
+    ">
+      <img src="https://i.imgur.com/HbBKfyx.png" 
+           alt="SBT Executive — Entertainment" 
+           style="
+             width:100%; height:100%; max-height:520px; object-fit:cover;
+             border-radius:16px; box-shadow:0 12px 30px rgba(3,16,52,.12);
+           ">
+    </div>
+
+  </div>
+</section>

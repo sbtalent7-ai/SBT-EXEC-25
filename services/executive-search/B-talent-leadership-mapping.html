@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc C – Talent & Leadership Mapping | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; 
+  --cyan:#45D1FF; 
+  --light:#F5F7FA; 
+  --dark:#2E3345;
+  --white:#FFFFFF; 
+  --pearl:#ECEFF4;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--navy);
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white); /* ✅ fond global blanc */
+}
+.mapping-card{
+  background:var(--pearl); /* ✅ carte gris perle léger */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.mapping-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+  position:relative;
+}
+.mapping-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.mapping-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.mapping-right img:hover{
+  transform:scale(1.03);
+}
+.mapping-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.mapping-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  letter-spacing:.3px;
+  margin:0 0 24px;
+}
+.opening-line{
+  font-size:16px;
+  font-weight:700;
+  color:var(--cyan); /* Bleu clair */
+  margin-bottom:10px;
+  text-transform:none; /* Minuscules sauf première lettre */
+}
+.mapping-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.mapping-left strong{color:var(--navy);}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.expand p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+}
+.cta{
+  margin-top:32px;
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .mapping-card{flex-direction:column;}
+  .mapping-left,.mapping-right{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+
+<div class="mapping-card">
+
+  <!-- Colonne texte -->
+  <div class="mapping-left">
+    <h1>Talent & Leadership Mapping</h1>
+    <p class="opening-line">Avant d’agir, nous observons, analysons, anticipons.</p>
+    <h2>Cartographier les talents et anticiper les décisions de leadership</h2>
+
+    <p><strong>Cartographier les talents, comprendre les dynamiques du marché et identifier les bons profils</strong> : une étape clé pour bâtir une stratégie de recrutement performante et éclairée.</p>
+
+    <p>Dans un environnement où les <strong>enjeux de leadership se complexifient</strong>, le Talent & Leadership Mapping permet d’<strong>anticiper, sécuriser et accélérer vos décisions</strong>.  
+    Cette démarche offre une <strong>vision claire du marché, des dynamiques sectorielles et des profils disponibles</strong>, tout en mesurant l’attractivité réelle de votre proposition employeur.</p>
+
+    <button class="toggle" data-target="#mapping-expand">En savoir plus</button>
+
+    <div class="expand" id="mapping-expand">
+      <h3>💡 Problématiques clients</h3>
+      <ul>
+        <li>Identifier les talents stratégiques sur un marché tendu ou fragmenté.</li>
+        <li>Comprendre les dynamiques de mobilité et les véritables leviers d’attractivité.</li>
+        <li>Évaluer la profondeur de marché avant de lancer une recherche.</li>
+        <li>Aligner enjeux RH et business autour d’une vision partagée du leadership.</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <ul>
+        <li><strong>Définition du profil cible</strong> et des critères clés (expertise, scope, leadership, valeurs).</li>
+        <li><strong>Benchmark</strong> de 100 à 200 profils selon le secteur et la complexité du poste.</li>
+        <li><strong>Identification</strong> de talents issus de notre réseau international de leaders.</li>
+        <li><strong>Analyse approfondie</strong> des insights marché : attractivité, rémunération, disponibilité, concurrence.</li>
+        <li><strong>Recommandations stratégiques</strong> et décision Go / No-Go avant phase de chasse.</li>
+      </ul>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li><strong>Vision claire du marché</strong> et des marges de manœuvre.</li>
+        <li><strong>Décisions plus rapides et informées</strong> basées sur des données concrètes.</li>
+        <li><strong>Réduction des risques</strong> liés aux biais internes et à la méconnaissance du marché.</li>
+        <li><strong>Alignement renforcé</strong> entre stratégie RH et priorités de leadership globales.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Cédric Le Nest</strong> — Managing Partner, expert en stratégie de recrutement et intelligence marché dans le sport et l’entertainment.</li>
+        <li><strong>Daniel Woh</strong> — Partner, spécialiste du conseil stratégique et de la structuration RH internationale.</li>
+        <li><strong>Jean-Laurent Bourquin</strong> — Senior Advisor, expert du leadership sportif et des dynamiques organisationnelles.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#mapping-expand">▲ Réduire</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne image -->
+  <div class="mapping-right">
+    <img src="https://i.imgur.com/xCvtCV2.jpeg" alt="Talent & Leadership Mapping – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

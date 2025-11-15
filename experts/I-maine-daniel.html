@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc E – Marine Lallement & Daniel Woh | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --light:#F5F7FA; --dark:#2E3345;
+  --white:#FFFFFF; --pearl:#ECEFF4; --title:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:'Lato',sans-serif;color:var(--dark);background:var(--navy);
+}
+.section-wrapper{
+  padding:40px 0 10px;background:var(--white);
+}
+.experts-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  max-width:100%;margin:0;padding:20px 0 40px;
+  background:linear-gradient(180deg, #F5F7FA 0%, #E9EEF3 100%);
+  border-top:1px solid rgba(69,209,255,0.15);
+  border-bottom:1px solid rgba(69,209,255,0.15);
+}
+.profile-card{
+  width:48%;background:var(--pearl);border-radius:18px;
+  overflow:hidden;margin-bottom:20px;transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  position:relative;box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.profile-card::before{
+  content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;
+  box-shadow:0 0 0 rgba(69,209,255,0);transition:box-shadow .3s ease;
+}
+.profile-card:hover{
+  transform:translateY(-4px);box-shadow:0 12px 30px rgba(69,209,255,0.15);
+}
+.profile-card:hover::before{
+  box-shadow:0 0 24px rgba(69,209,255,0.35);
+}
+.profile-header{
+  background:var(--navy);padding:20px;color:var(--white);
+  box-shadow:0 0 40px rgba(69,209,255,.25) inset;position:relative;
+}
+.profile-photo{
+  position:absolute;top:20px;right:20px;width:130px;height:130px;object-fit:contain;
+  border:3px solid var(--cyan);border-radius:12px;background:var(--navy);
+  box-shadow:0 0 25px rgba(69,209,255,.45);
+}
+.profile-info{padding-right:170px;}
+.profile-info h1{margin:0;font-size:30px;font-weight:900;color:var(--white)}
+.profile-info h2{margin:6px 0 8px;font-size:18px;font-weight:700;color:var(--title)}
+.primary-expertise{font-size:15px;font-weight:900;color:var(--cyan)}
+.location{font-weight:700;color:#BFC7DA;margin-top:6px}
+.intro{
+  display:block;margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2);
+  font-size:15px;line-height:1.7;color:var(--white);
+  max-width:100%;
+}
+.intro strong{color:var(--white);font-weight:700;}
+.cta{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:12px;margin-top:18px}
+.cta a{
+  flex:1;background:var(--cyan);color:var(--navy);text-decoration:none;padding:10px 0;
+  text-align:center;border-radius:8px;font-weight:800;font-size:13px;transition:.18s;
+}
+.cta a:hover{background:var(--white);color:var(--navy)}
+.cta .toggle{
+  width:100%;margin-top:12px;background:none;border:1.6px solid var(--cyan);
+  color:var(--cyan);padding:10px 0;border-radius:8px;font-weight:900;font-size:13px;
+  cursor:pointer;text-align:center;
+}
+.cta .toggle:hover{background:var(--cyan);color:var(--navy)}
+.expand{display:none;background:var(--white);}
+.expand section{padding:20px 24px;border-bottom:1px solid #E6EBF2}
+.expand section:nth-child(even){background:#F7F8FB}
+.expand h3{
+  color:var(--cyan);font-weight:900;text-transform:uppercase;
+  margin:0 0 10px;text-shadow:0 0 10px rgba(69,209,255,.25);
+}
+.expand p,.expand li{font-size:14px;line-height:1.8;color:var(--dark)}
+.expand ul{list-style:none;padding:0;margin:8px 0 18px}
+.expand li::before{content:"▸ ";color:var(--cyan);font-weight:900}
+.close-row{text-align:center;margin:20px 0 30px}
+.close-row .toggle{border-color:#d3d8e2}
+@media(max-width:960px){
+  .profile-card{width:100%;}
+  .profile-header{padding:20px}
+  .profile-photo{position:relative;top:0;right:0;margin:0 auto 20px;display:block}
+  .profile-info{padding-right:0;text-align:center}
+  .cta a{flex:100%;}
+  .expand section{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="experts-grid">
+
+<!-- === MARINE LALLEMENT === -->
+<div class="profile-card" id="marine-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/HQEsQlp.png" alt="Marine Lallement">
+    <div class="profile-info">
+      <h1>Marine Lallement</h1>
+      <h2>Senior Partner – Pilier “Develop”</h2> 
+      <span class="primary-expertise">| Learning & Development</span>
+      <p class="location">📍 Paris, France — 🌍 Europe</p>
+    </div>
+    <p class="intro">
+      <strong>20 ans d’expérience dans la formation exécutive et la professionnalisation du sport et de l’entertainment.</strong>  
+      Fondatrice de <strong>FAST Sport</strong> et <strong>Slash Sport</strong>, elle accompagne clubs, ligues et fédérations dans le développement des <strong>compétences, des langues et du leadership</strong> au sein des organisations sportives.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Planifier un échange confidentiel</a>
+      <a href="/leadership-development" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#marine-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="marine-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Marine Lallement</strong> est <strong>Senior Partner</strong> au sein du pilier <em>“Develop – Learning & Development”</em> de <strong>SBT Executive</strong>.  
+      Elle a fondé <strong>FAST Sport</strong> en 2007, le premier centre de formation professionnelle dédié au sport business, avant de créer <strong>Slash Sport</strong>, la première plateforme d’e-learning pour les professionnels du sport.  
+      Depuis plus de <strong>20 ans</strong>, elle œuvre à relier <strong>formation, expertise terrain et performance opérationnelle</strong> afin de professionnaliser l’écosystème du sport et de l’entertainment.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Learning & Development</li>
+        <li>Talent Upskilling & Executive Education</li>
+        <li>Leadership & Team Learning Programmes</li>
+        <li>Communication stratégique & prise de parole</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Fondatrice de FAST Sport</strong>, première école de formation dédiée au sport business.</li>
+        <li><strong>Pionnière du e-learning</strong> avec <strong>Slash Sport</strong>, plateforme d’apprentissage pour les professionnels du sport et de l’entertainment.</li>
+        <li><strong>Spécialiste du développement des talents</strong> pour clubs, fédérations et agences.</li>
+        <li><strong>Actrice reconnue</strong> du lien entre éducation, culture et performance.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références</h3>
+      <ul>
+        <li>LFP, FFF, Women’s Football League, Clubs de Ligue 1 & 2</li>
+        <li>Sporsora, Doha GOALS Forum, Medef Sport</li>
+      </ul>
+      <p><em>Ces collaborations témoignent de son rôle dans la professionnalisation du sport à travers des dispositifs d’apprentissage innovants.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#marine-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+<!-- === DANIEL WOH === -->
+<div class="profile-card" id="daniel-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/1hs8hlT.png" alt="Daniel Woh">
+    <div class="profile-info">
+      <h1>Daniel Woh</h1>
+      <h2>Partner – Pilier “Attract”</h2> 
+      <span class="primary-expertise">| Executive Search</span>
+      <p class="location">📍 Singapour — 🌍 Asie-Pacifique</p>
+    </div>
+    <p class="intro">
+      <strong>15 ans d’expérience dans le recrutement de dirigeants au sein des industries du sport, du lifestyle et du retail en Asie.</strong>  
+      Conseiller de marques internationales telles que <strong>adidas, Nike et FILA</strong> sur leurs stratégies de leadership régional et de croissance organisationnelle.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Planifier un échange confidentiel</a>
+      <a href="/executive-search" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#daniel-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="daniel-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Daniel Woh</strong> est <strong>Partner</strong> au sein du pilier <em>“Attract – Executive Search”</em> de <strong>SBT Executive</strong>.  
+      Basé à Singapour, il conseille depuis plus de <strong>15 ans</strong> les grandes marques internationales sur leurs enjeux de recrutement, de leadership et de structuration régionale en Asie.  
+      Il a accompagné <strong>adidas, Nike, FILA, Descente</strong> et <strong>Kolon Sport</strong> dans la constitution de leurs équipes dirigeantes locales et régionales.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Executive Search & Talent Acquisition</li>
+        <li>Leadership Assessment & Succession Planning</li>
+        <li>Talent Mapping régional (Asie-Pacifique)</li>
+        <li>Stratégie de croissance et d’expansion</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>15 ans d’expérience</strong> en Executive Search dans le sport, le retail et le lifestyle.</li>
+        <li><strong>Recrutement de dirigeants et d’experts</strong> pour les principales marques mondiales.</li>
+        <li><strong>Accompagnement stratégique</strong> des sièges internationaux dans la structuration régionale.</li>
+        <li><strong>Expert en intelligence culturelle</strong> pour connecter les standards mondiaux aux réalités locales.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références</h3>
+      <ul>
+        <li>adidas, Nike, FILA, Descente, Kolon Sport, Technifibre</li>
+      </ul>
+      <p><em>Ces missions reflètent sa capacité à identifier et accompagner les talents clés au sein d’organisations globales.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#daniel-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

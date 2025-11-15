@@ -1,0 +1,254 @@
+<!-- ✅ BLOC B — NOTRE PROMESSE (VERSION FINALE PREMIUM, IMAGE A DROITE TOUJOURS) -->
+<section class="sbt-promise" aria-labelledby="promise-title-fr">
+  <div class="sbt-promise-wrap">
+    <div class="sbt-promise-grid">
+
+      <!-- 🧭 TEXTE -->
+      <div class="sbt-promise-text" data-animate="fade-up">
+        <div class="sbt-promise-accent"></div>
+
+        <div class="sbt-promise-content">
+          <p class="sbt-kicker">Notre promesse</p>
+
+          <h2 id="promise-title-fr">
+            Nous accompagnons les leaders à performer durablement, là où l’humain et la performance se rencontrent.
+          </h2>
+
+          <p class="sbt-intro">
+            Nous croyons que le leadership est un art exigeant — fait de clarté, de résilience et d’une compréhension profonde de l’impact humain.  
+            Dans les univers du <strong>sport</strong>, de <strong>l’entertainment</strong> et des <strong>loisirs</strong>, le leadership se révèle dans l’action — sous pression, en performance, et à travers les autres.
+          </p>
+
+          <button class="toggle-btn" onclick="togglePromiseFr(this)">Lire plus ▾</button>
+
+          <div class="toggle-content" id="promise-content-fr">
+            <p>
+              Chez <strong>SBT Executive</strong>, nous accompagnons les dirigeants là où <strong>la performance humaine définit tout</strong>.  
+              Ces univers reposent sur la <strong>passion</strong>, l’<strong>agilité</strong> et l’<strong>excellence</strong> — des valeurs qui ne se maintiennent qu’avec les bonnes personnes.
+            </p>
+
+            <p>
+              Notre promesse est simple, mais exigeante : <strong>identifier et soutenir des leaders</strong> capables d’unir <strong>vision et exécution</strong>,  
+              <strong>impact individuel</strong> et <strong>succès collectif</strong>.  
+              En conjuguant <strong>Executive Search</strong> et <strong>Leadership Advisory</strong>,  
+              nous aidons les organisations à <strong>attirer des talents d’exception</strong>,  
+              <strong>renforcer leurs cultures managériales</strong> et <strong>ancrer durablement la transformation</strong>.
+            </p>
+
+            <p class="transition">
+              Car derrière chaque transformation se cache une conviction essentielle : le leadership commence toujours par l’humain.
+            </p>
+
+            <p>
+              <a href="/notre-conviction" class="sbt-cta-link">→ Découvrir notre conviction</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🎯 IMAGE (TOUJOURS A DROITE) -->
+      <div class="sbt-promise-visual" data-animate="fade-up">
+        <img src="https://i.imgur.com/kOGykeb.jpeg" alt="Leadership en action - SBT Executive" loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --lightgray:#F7F8FA;
+}
+
+/* 🎨 Fond premium (dégradé léger + option texture) */
+.sbt-promise{
+  background:linear-gradient(to bottom, #F7F8FA 0%, #F5F7FB 100%);
+  padding:140px 20px;
+  font-family:'Lato',sans-serif;
+  color:#2E3345;
+  overflow:hidden;
+}
+
+/* Structure globale */
+.sbt-promise-wrap{
+  max-width:1250px;
+  margin:0 auto;
+}
+.sbt-promise-grid{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+  flex-wrap:nowrap; /* 🚫 empêche de passer en dessous */
+}
+
+/* 🧭 Zone Texte */
+.sbt-promise-text{
+  flex:1 1 55%;
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+  position:relative;
+  padding-top:20px;
+}
+
+/* Trait cyan */
+.sbt-promise-accent{
+  width:3px;
+  background:var(--cyan);
+  border-radius:2px;
+  height:100%;
+}
+
+/* Contenu centré et premium */
+.sbt-promise-content{
+  flex:1;
+  max-width:650px;
+}
+
+/* Styles texte */
+.sbt-kicker{
+  color:var(--cyan);
+  font-weight:700;
+  text-transform:uppercase;
+  margin-bottom:15px;
+  letter-spacing:.07em;
+}
+.sbt-promise-text h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,3.4vw,42px);
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:25px;
+}
+.sbt-intro{
+  font-size:17px;
+  line-height:1.9;
+  margin-bottom:25px;
+  color:#333;
+}
+.sbt-promise-text p{
+  font-size:16px;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+/* CTA toggle */
+.toggle-btn{
+  border:none;
+  background:none;
+  color:var(--cyan);
+  font-weight:700;
+  cursor:pointer;
+  padding:0;
+  font-size:16px;
+  margin-bottom:15px;
+}
+.toggle-content{
+  display:none;
+  margin-top:20px;
+  animation:fadeIn .4s ease-in-out;
+}
+
+.sbt-cta-link{
+  font-weight:700;
+  color:var(--cyan);
+  text-decoration:none;
+  transition:.3s;
+}
+.sbt-cta-link:hover{
+  color:var(--navy);
+  text-decoration:underline;
+}
+
+/* 🎯 IMAGE – TOUJOURS A DROITE */
+.sbt-promise-visual{
+  flex:1 1 45%;
+  text-align:right;
+}
+.sbt-promise-visual img{
+  max-width:90%;
+  border-radius:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.12);
+  transition:transform .6s ease;
+}
+.sbt-promise-visual img:hover{
+  transform:scale(1.02);
+}
+
+/* Transition */
+.transition{
+  font-style:italic;
+  color:var(--cyan);
+  margin-top:35px;
+}
+
+/* Animation fadeIn */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(15px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* 📱 RESPONSIVE — l’image reste à droite */
+@media(max-width:960px){
+
+  .sbt-promise-grid{
+    display:flex;
+    flex-direction:row; /* 👉 Toujours côte à côte */
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    flex-wrap:nowrap;
+  }
+
+  .sbt-promise-text{
+    flex:1 1 55%;
+    text-align:left;
+  }
+
+  .sbt-promise-visual{
+    flex:1 1 45%;
+    text-align:right;
+  }
+
+  /* Taille maîtrisée en mobile */
+  .sbt-promise-visual img{
+    max-width:95%;
+  }
+
+  .sbt-promise-content{
+    max-width:100%;
+  }
+
+  .sbt-promise-accent{
+    display:none;
+  }
+}
+</style>
+
+<script>
+// Toggle FR
+function togglePromiseFr(btn){
+  const content = btn.closest('.sbt-promise-content').querySelector('#promise-content-fr');
+  const open = content.style.display === 'block';
+  content.style.display = open ? 'none' : 'block';
+  btn.innerHTML = open ? 'Lire plus ▾' : 'Réduire ▲';
+}
+
+// Animation fade-up
+document.addEventListener('DOMContentLoaded',()=>{
+  const elements=document.querySelectorAll('[data-animate="fade-up"]');
+  const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.style.animation='fadeIn 0.8s ease forwards';
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.2});
+  elements.forEach(el=>observer.observe(el));
+});
+</script>

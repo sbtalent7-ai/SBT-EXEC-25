@@ -1,0 +1,225 @@
+<!-- ✅ BLOC C — NOTRE CONVICTION (IMAGE À GAUCHE, VERSION PREMIUM FR) -->
+<section class="sbt-conviction" aria-labelledby="conviction-title">
+  <div class="sbt-conviction-wrap">
+    <div class="sbt-conviction-grid image-left">
+
+      <!-- 🎯 IMAGE -->
+      <div class="sbt-conviction-visual" data-animate="fade-up">
+        <img src="https://i.imgur.com/1eOKJZI.jpeg" alt="Leadership authentique en action - SBT Executive" loading="lazy">
+      </div>
+
+      <!-- 🧭 TEXTE -->
+      <div class="sbt-conviction-text" data-animate="fade-up">
+        <div class="sbt-conviction-line"></div>
+        <p class="sbt-kicker">Notre Conviction</p>
+        <h2 id="conviction-title">Parce que le leadership commence par l’humain.</h2>
+
+        <p>
+          Nous croyons aux leaders qui <strong>donnent du sens à la performance</strong> 
+          et <strong>insufflent de la vie à leurs équipes</strong>.  
+          À ceux pour qui <strong>le sens</strong>, <strong>la passion</strong> et 
+          <strong>la performance collective</strong> ne sont pas des concepts, mais une véritable manière d’être.  
+          Ces leaders <strong>inspirent</strong>, <strong>rassemblent</strong> et diffusent une 
+          <strong>énergie positive</strong> : ils créent du lien là où d’autres ne cherchent que le résultat.
+        </p>
+
+        <p class="highlight">
+          Dans un monde en transformation, la conviction est ce qui ancre le leadership.  
+          La nôtre est simple : la réussite commence par la conscience de soi.
+        </p>
+
+        <button class="toggle-btn" onclick="toggleConviction()">Lire la suite ▾</button>
+
+        <div class="toggle-content" id="conviction-content">
+          <p>
+            Les univers du <strong>sport</strong>, de l’<strong>entertainment</strong> et des <strong>loisirs</strong> 
+            reposent sur la passion.  
+            Ils <strong>rassemblent</strong>, <strong>inspirent</strong> et <strong>provoquent l’émotion</strong>.  
+            Ceux qui les dirigent portent une responsabilité unique&nbsp;: 
+            <strong>donner du sens à la performance</strong>, 
+            <strong>faire grandir les autres</strong> et 
+            <strong>unir autour d’une vision partagée</strong>.
+          </p>
+
+          <p>
+            Chez <strong>SBT Executive</strong>, nous aidons ces leaders à réussir — 
+            non seulement par leurs décisions, mais par leur capacité à 
+            <strong>révéler le potentiel collectif</strong>.  
+            Car lorsque le leadership est authentique, il dépasse les organisations&nbsp;:  
+            il crée <strong>du lien</strong>, <strong>de la confiance</strong> et une <strong>réussite partagée</strong>.
+          </p>
+
+          <p>
+            <a href="/notre-methodologie" class="sbt-cta-link">→ Découvrir notre méthodologie</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+:root{
+  --navy:#031034;
+  --cyan:#45D1FF;
+  --white:#F9FBFD; /* 🎨 Nouveau fond bleu glacial */
+}
+.sbt-conviction{
+  background:var(--white);
+  padding:100px 20px;
+  font-family:'Lato',sans-serif;
+  color:#2E3345;
+}
+.sbt-conviction-wrap{
+  max-width:1200px;
+  margin:0 auto;
+}
+.sbt-conviction-grid{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  flex-wrap:wrap;
+}
+.sbt-conviction-grid.image-left{
+  flex-direction:row; /* Image à gauche */
+}
+.sbt-conviction-text{
+  flex:1 1 55%;
+  position:relative;
+  text-align:left;
+}
+.sbt-conviction-line{
+  position:absolute;
+  left:-20px;
+  top:10px;
+  width:3px;
+  height:80%;
+  background:var(--cyan);
+  border-radius:2px;
+}
+.sbt-kicker{
+  color:var(--cyan);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  margin-bottom:10px;
+}
+.sbt-conviction-text h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(26px,3vw,34px);
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:20px;
+}
+.sbt-conviction-text p{
+  font-size:15.5px;
+  line-height:1.8;
+  margin-bottom:18px;
+}
+.sbt-conviction-text .highlight{
+  font-style:italic;
+  font-weight:600;
+  color:var(--navy);
+}
+.toggle-btn{
+  border:none;
+  background:none;
+  color:var(--cyan);
+  font-weight:700;
+  cursor:pointer;
+  padding:0;
+  font-size:15px;
+  margin-top:10px;
+  transition:transform .3s ease;
+}
+.toggle-btn:hover{
+  transform:translateY(-2px);
+}
+.toggle-content{
+  display:none;
+  margin-top:10px;
+  animation:fadeIn .3s ease-in-out;
+}
+.sbt-cta-link{
+  font-weight:700;
+  color:var(--cyan);
+  text-decoration:none;
+  transition:.3s;
+}
+.sbt-cta-link:hover{
+  color:var(--navy);
+  text-decoration:underline;
+}
+.sbt-conviction-visual{
+  flex:1 1 40%;
+  text-align:center;
+}
+.sbt-conviction-visual img{
+  max-width:85%;
+  height:auto;
+  border-radius:16px;
+  filter:grayscale(30%) brightness(90%) contrast(105%);
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+  transition:transform .6s ease, box-shadow .6s ease, filter .6s ease;
+}
+.sbt-conviction-visual img:hover{
+  transform:scale(1.03);
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  filter:grayscale(0%) brightness(100%) contrast(110%);
+}
+
+/* Responsive */
+@media(max-width:960px){
+  .sbt-conviction-grid,
+  .sbt-conviction-grid.image-left{
+    flex-direction:column;
+    text-align:center;
+  }
+  .sbt-conviction-line{
+    display:none;
+  }
+  .sbt-conviction-text{
+    text-align:center;
+  }
+  .sbt-conviction-visual img{
+    max-width:70%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+[data-animate="fade-up"]{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+[data-animate="fade-up"].visible{
+  opacity:1;
+  transform:translateY(0);
+}
+</style>
+
+<script>
+function toggleConviction(){
+  const content=document.getElementById('conviction-content');
+  const btn=document.querySelector('.toggle-btn');
+  const open=content.style.display==='block';
+  content.style.display=open?'none':'block';
+  btn.innerHTML=open?'Lire la suite ▾':'Réduire ▲';
+}
+
+// Animation au scroll
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.2});
+document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+</script>

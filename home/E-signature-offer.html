@@ -1,0 +1,171 @@
+<!-- ✅ BLOC E — NOTRE SIGNATURE (FOND SOMBRE #061338 — TITRE BLEU CLAIR) -->
+<section class="sbt-signature" aria-labelledby="signature-title-fr">
+  <div class="sbt-signature-wrap">
+    <div class="sbt-signature-grid">
+
+      <!-- 🧭 TEXTE À GAUCHE -->
+      <div class="sbt-signature-text">
+        <p class="sbt-kicker">Notre signature</p>
+        <h2 id="signature-title-fr">SBT Leadership Shift</h2>
+
+        <p>
+          Parce qu’un bon recrutement ne suffit jamais, nous avons conçu une méthode qui relie <strong>sélection</strong>, <strong>accompagnement</strong> et <strong>impact durable</strong>.  
+          Une approche centrée sur l’humain, pensée pour attirer les bons leaders, faciliter leur réussite et ancrer la performance dans le temps.
+        </p>
+
+        <p>
+          Fondée sur une compréhension profonde du <strong>leadership</strong> et des <strong>dynamique humaines</strong>, notre philosophie accompagne les transformations ambitieuses et durables — en aidant les organisations à se développer par les personnes, et non seulement par les processus.
+        </p>
+
+        <button class="toggle-btn" onclick="toggleSignatureFr()">Lire plus ▾</button>
+
+        <div class="toggle-content" id="signature-content-fr">
+          <p>
+            Chez <strong>SBT Executive</strong>, nous intervenons à la croisée de  
+            <strong>l’Executive Search</strong> et du <strong>Leadership Advisory</strong>.  
+            Notre méthode signature — le <strong>SBT Leadership Shift</strong> — repose sur trois piliers complémentaires :  
+            <br><br>
+            <em><strong class="attract">Attirer</strong> les bons leaders</em> — identifier et engager des talents dont la vision et les valeurs s’alignent avec les ambitions de l’organisation ;  
+            <br>
+            <em><strong class="create">Créer</strong> les conditions du succès</em> — accompagner dirigeants et équipes pour accélérer l’intégration, l’impact et la cohésion ;  
+            <br>
+            <em><strong class="impact">Impacter</strong> le long terme</em> — ancrer la transformation dans la culture et la performance afin de garantir un succès collectif durable.
+          </p>
+
+          <p>
+            Cette approche intégrée nous permet d’agir au plus près des leviers humains qui façonnent les organisations performantes.  
+            <br><a href="/nos-services" class="sbt-cta-link">→ Découvrir notre approche intégrée</a>
+          </p>
+
+          <p class="transition">
+            Car derrière chaque méthode se trouve une équipe — des femmes et des hommes qui incarnent notre vision et font vivre la transformation du leadership.
+          </p>
+        </div>
+      </div>
+
+      <!-- 🎯 VISUEL À DROITE -->
+      <div class="sbt-signature-visual">
+        <div class="animated-verbs">
+          <span class="verb attract">Attirer</span>
+          <div class="line"></div>
+          <span class="verb create">Créer</span>
+          <div class="line"></div>
+          <span class="verb impact">Impacter</span>
+        </div>
+        <img src="https://i.imgur.com/Ngu1EEA.png" alt="Diagramme Attirer / Créer / Impacter - SBT Executive" loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+:root{
+  --navy:#061338; 
+  --cyan:#45D1FF; 
+  --gray:#D9D9D9;
+  --light-bg:#061338;
+}
+
+/* 🌐 STRUCTURE */
+.sbt-signature{
+  background:var(--light-bg);
+  padding:80px 20px;
+  font-family:'Lato',sans-serif;
+  color:#FFFFFF;
+}
+.sbt-signature-wrap{ max-width:1200px; margin:0 auto; }
+.sbt-signature-grid{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:60px; flex-wrap:wrap;
+}
+
+/* 🧭 TEXTE */
+.sbt-signature-text{ flex:1 1 55%; }
+.sbt-kicker{
+  color:var(--cyan); font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:10px;
+}
+.sbt-signature-text h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(26px,3vw,34px);
+  font-weight:700; 
+  color:var(--cyan); /* 🔥 Titre en bleu clair */
+  margin-bottom:20px;
+}
+.sbt-signature-text p{
+  font-size:15px; line-height:1.75; margin-bottom:20px;
+  color:#FFFFFF;
+}
+
+/* ✴️ BOUTON + LIENS */
+.toggle-btn{
+  border:none; background:none; color:var(--cyan);
+  font-weight:700; cursor:pointer; padding:0; font-size:15px; margin-bottom:10px;
+}
+.toggle-content{ display:none; margin-top:10px; animation:fadeIn .3s ease-in-out; }
+.sbt-cta-link{
+  font-weight:700; color:var(--cyan); text-decoration:none; transition:.3s;
+}
+.sbt-cta-link:hover{ color:#FFFFFF; text-decoration:underline; }
+
+/* 🎨 MOTS-CLÉS */
+strong.attract{ color:var(--cyan); }
+strong.create{ color:#FFFFFF; }
+strong.impact{ color:var(--gray); }
+
+/* 🖼️ VISUEL */
+.sbt-signature-visual{ flex:1 1 40%; text-align:center; position:relative; }
+.sbt-signature-visual img{
+  max-width:85%; height:auto; border-radius:16px;
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  opacity:0; transform:translateY(20px);
+  animation:slideFadeIn 1s ease-out forwards; animation-delay:.5s;
+}
+.animated-verbs{
+  display:flex; justify-content:center; align-items:center;
+  gap:20px; margin-bottom:25px;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(22px,2vw,28px); font-weight:700;
+  color:#FFFFFF;
+}
+.animated-verbs .verb{ opacity:0; animation:fadeInUp 1s ease forwards; }
+.animated-verbs .verb.attract{ color:var(--cyan); animation-delay:.3s; }
+.animated-verbs .verb.create{ color:#FFFFFF; animation-delay:.8s; }
+.animated-verbs .verb.impact{ color:var(--gray); animation-delay:1.3s; }
+.line{
+  width:40px; height:2px; background:var(--cyan);
+  opacity:0; animation:fadeInLine 1s ease forwards;
+}
+
+/* 💫 TRANSITION */
+.transition{
+  font-style:italic; 
+  color:var(--cyan);
+  margin-top:30px;
+  display:block;
+}
+
+/* 📱 RESPONSIVE */
+@media(max-width:960px){
+  .sbt-signature-grid{ flex-direction:column; text-align:center; }
+  .sbt-signature-text{ text-align:center; }
+  .sbt-signature-visual img{ max-width:70%; }
+}
+
+/* 🌈 ANIMATIONS */
+@keyframes fadeInLine{ to{opacity:1;} }
+@keyframes fadeInUp{ from{opacity:0; transform:translateY(15px);} to{opacity:1; transform:translateY(0);} }
+@keyframes fadeIn{ from{opacity:0;} to{opacity:1;} }
+@keyframes slideFadeIn{ from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+</style>
+
+<script>
+function toggleSignatureFr(){
+  const content=document.getElementById('signature-content-fr');
+  const btn=document.querySelector('.toggle-btn');
+  const open=content.style.display==='block';
+  content.style.display=open?'none':'block';
+  btn.innerHTML=open?'Lire plus ▾':'Réduire ▲';
+}
+</script>

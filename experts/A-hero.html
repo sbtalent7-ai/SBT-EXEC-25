@@ -1,0 +1,134 @@
+<!-- HERO – Notre Collectif d’Experts (FR Version - Premium, sans répétitions) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/ZuTqiN3.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 56, 0.55);
+  "></div>
+
+  <!-- Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+  ">
+    <div class="sbt-text" style="
+      max-width: 720px;
+      backdrop-filter: blur(6px);
+      background: rgba(6, 19, 56, 0.35);
+      border-radius: 16px;
+      padding: 48px;
+    ">
+
+      <!-- Titre -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Notre Collectif d’Experts
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        Un collectif réunissant des <strong>dirigeants</strong>, des <strong>DRH</strong>  
+        et des <strong>chasseurs de têtes expérimentés</strong> — aux côtés de <strong>coachs certifiés</strong>,  
+        de <strong>psychologues du sport</strong> et de <strong>spécialistes de la transformation humaine</strong>.  
+        Issus de nos <strong style="color:#45D1FF;">secteurs de référence</strong> (Sport, Entertainment, Loisirs)  
+        et d’autres <strong>univers d’excellence</strong>,  
+        ils partagent une conviction commune :  
+        <strong style="color:#45D1FF;">la performance durable naît des personnes, du sens et de l’intelligence collective.</strong>
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="longTextExpertsFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Ce collectif incarne le <strong style="color:#45D1FF;">capital humain et intellectuel</strong> de SBT Executive —  
+          une équipe de professionnels aguerris alliant vision stratégique et compréhension fine des dynamiques humaines.  
+          Leurs expertises couvrent le <strong>leadership d’entreprise</strong>, la <strong>recherche de dirigeants</strong>,  
+          la <strong>psychologie organisationnelle</strong> et l’<strong>excellence du coaching</strong>,  
+          formant un écosystème unique où se rencontrent performance et humanité.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Chaque mission mobilise les expertises les plus pertinentes selon les enjeux du client.  
+          Qu’il s’agisse de <strong>leadership</strong>, de <strong>transformation</strong>,  
+          de <strong>recrutement stratégique</strong> ou d’<strong>alignement organisationnel</strong>,  
+          nous <strong style="color:#45D1FF;">activons le bon pool d’experts</strong>  
+          pour construire une approche <strong>personnalisée, stratégique et profondément humaine</strong>.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Ce modèle agile et collaboratif nous permet d’adresser l’ensemble des  
+          <strong>enjeux de leadership et d’organisation</strong>.  
+          En croisant des <strong style="color:#45D1FF;">regards complémentaires et pluridisciplinaires</strong> —  
+          du management à la science humaine — nous concevons des solutions alliant  
+          <strong>sens, impact et valeur durable.</strong>
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnExpertsFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/contact" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          🤝 Prendre un moment pour une discussion confidentielle
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    document.getElementById('toggleTextBtnExpertsFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextExpertsFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

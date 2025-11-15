@@ -1,0 +1,66 @@
+<!-- 🇫🇷 BLOC D — NOS RÉFÉRENCES (VERSION PREMIUM BLANC SUR BLANC) -->
+<section class="sbt-references" style="background-color:#ffffff; padding:80px 0; font-family:'Lato', sans-serif; color:#031034;">
+  <div style="max-width:1200px; margin:0 auto; text-align:center;">
+
+    <!-- 🧭 TITRE -->
+    <h2 style="font-family:'Playfair Display', serif; font-size:42px; font-weight:700; margin-bottom:15px; color:#031034;">
+      Ils nous font confiance
+    </h2>
+
+    <!-- 💙 LIGNE TURQUOISE -->
+    <div style="width:80px; height:3px; background-color:#45D1FF; margin:0 auto 35px; border-radius:2px;"></div>
+
+    <!-- 📝 INTRO -->
+    <h3 style="font-size:20px; color:#031034; font-weight:400; margin-bottom:50px;">
+      Quelques organisations et dirigeants qui nous ont fait confiance
+    </h3>
+
+    <!-- 🎯 CARROUSEL DE LOGOS -->
+    <div class="logo-carousel" style="position:relative; overflow:hidden; max-width:1000px; margin:0 auto 40px;">
+      <div class="logo-track" style="display:flex; transition:transform 1s ease;">
+
+        <!-- SLIDE 1 -->
+        <div class="logo-slide" style="display:flex; justify-content:space-around; align-items:center; min-width:100%;">
+          <img src="https://i.imgur.com/P47WrGV.png" alt="Logo 1" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/C5RRmkK.png" alt="Logo 2" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/lqA2IJj.png" alt="Logo 3" style="max-height:160px; opacity:0.95;">
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="logo-slide" style="display:flex; justify-content:space-around; align-items:center; min-width:100%;">
+          <img src="https://i.imgur.com/fT4IYaX.png" alt="Logo 4" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/Gwo6AeF.png" alt="Logo 5" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/emT94kY.png" alt="Logo 6" style="max-height:160px; opacity:0.95;">
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="logo-slide" style="display:flex; justify-content:space-around; align-items:center; min-width:100%;">
+          <img src="https://i.imgur.com/ha2p66L.png" alt="Logo 7" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/zq96tjN.png" alt="Logo 8" style="max-height:160px; opacity:0.95;">
+          <img src="https://i.imgur.com/39TuC0s.png" alt="Logo 9" style="max-height:160px; opacity:0.95;">
+        </div>
+      </div>
+    </div>
+
+    <!-- ✨ TEXTE DE CONCLUSION -->
+    <p style="font-size:17px; color:#555; margin-top:20px; font-style:italic;">
+      Quelques exemples parmi de nombreuses collaborations de confiance, illustrant la diversité de nos partenariats.
+    </p>
+  </div>
+
+  <!-- 🚀 SCRIPT DU CARROUSEL -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".logo-track");
+      const slides = document.querySelectorAll(".logo-slide");
+      let index = 0;
+
+      function moveCarousel() {
+        index = (index + 1) % slides.length;
+        track.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      setInterval(moveCarousel, 5000);
+    });
+  </script>
+</section>

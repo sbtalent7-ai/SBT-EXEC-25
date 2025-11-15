@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc E – Collective Performance & Conflict Management | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA;
+  --dark:#2E3345;
+  --white:#FFFFFF;
+  --pearl:#ECEFF4; /* Gris perle clair pour la carte */
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--navy);
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white); /* ✅ Fond blanc */
+}
+.diagnostic-card{
+  background:var(--pearl); /* ✅ Carte gris perle */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  margin:0 0 24px;
+}
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.diagnostic-left strong{color:var(--navy);}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left,.diagnostic-right{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- Colonne gauche -->
+  <div class="diagnostic-left">
+    <h1>Collective Performance & Conflict Management</h1>
+    <h2>Renforcer la cohésion et transformer les tensions en leviers durables</h2>
+
+    <p><strong>Renforcer la confiance, la collaboration et la capacité à transformer les tensions en leviers de performance durable.</strong></p>
+
+    <p>La performance collective ne dépend pas seulement des compétences — elle repose sur la confiance, la cohésion et la capacité à transformer les tensions en alignement.  
+    Le programme <strong>Collective Performance & Conflict Management</strong> aide les dirigeants et leurs équipes à transformer le désaccord en source de clarté, de progrès et d'engagement.</p>
+
+    <button class="toggle" data-target="#conflit-expand">En savoir plus</button>
+
+    <div class="expand" id="conflit-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Comment reconstruire la cohésion au sein d’équipes dirigeantes fragmentées ?</li>
+        <li>Comment transformer les rapports de force en dialogue constructif ?</li>
+        <li>Comment instaurer une culture de confiance, de feedback et de responsabilité partagée ?</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <p>Une approche intégrée combinant <strong>ateliers collaboratifs</strong>, <strong>médiation stratégique</strong> et <strong>coaching d’équipe</strong>.  
+      Nous explorons les dynamiques interpersonnelles, les tensions implicites et les schémas comportementaux afin de restaurer la confiance et renforcer la performance collective.  
+      L’approche systémique relie leadership, culture et résultats pour construire une organisation à la fois résiliente et alignée.</p>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li>Une direction plus unie et plus collaborative.</li>
+        <li>Une communication transparente et un feedback constructif.</li>
+        <li>Une confiance renforcée et un engagement collectif durable.</li>
+        <li>Une organisation plus agile, humaine et résiliente face au changement.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Fabrice Gatti</strong> — Leading Partner, expert en dynamiques collectives, sociologie des organisations et psychologie de la motivation.</li>
+        <li><strong>Laurent Riffault</strong> — Leading Partner.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="#" target="_blank">📘 Découvrir notre approche du leadership collectif</a>
+      </div>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange avec un expert</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#conflit-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne droite -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/x2q3g0J.jpeg" alt="Collective Performance & Conflict Management – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

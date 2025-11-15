@@ -1,0 +1,95 @@
+<!-- BLOC B – Sport : Là où la passion devient un défi humain -->
+<section class="sbt-block sbt-split" style="background:#FFFFFF; padding:80px 0;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:0 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap;
+  ">
+
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display', serif;
+        font-size:36px; color:#031034; margin:0 0 16px; line-height:1.3;
+      ">
+        Là où la passion devient un <span style="color:#45D1FF;">défi humain</span>
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-intro" style="
+        font-size:19px; line-height:1.75; color:#2B2F3A; margin:0 0 24px;
+      ">
+        <strong>Clubs, ligues, fédérations, sponsors, médias, SportTech</strong> :  
+        nous accompagnons <strong style="color:#45D1FF;">ceux qui font vibrer le sport d’aujourd’hui</strong> et façonnent celui de demain.  
+        Dans un environnement où la performance s’entrelace à l’émotion,  
+        <strong>nos missions allient exigence, compréhension humaine et vision stratégique</strong> —  
+        car c’est là que se joue la différence entre un succès ponctuel et un impact durable.
+      </p>
+
+      <!-- Texte long (caché par défaut) -->
+      <div id="blocB-long" style="display:none;">
+        <p class="sbt-body" style="
+          font-size:17.5px; line-height:1.9; color:#434A57; margin:0 0 28px;
+        ">
+          Depuis près de <strong>quinze ans</strong>, nous accompagnons les <strong>dirigeants</strong>, <strong>DRH</strong> et <strong>talents clés</strong> du monde du sport —  
+          un univers où <strong style="color:#45D1FF;">la passion rencontre la performance</strong>,  
+          et où chaque transformation repose sur l’humain.<br><br>
+
+          Notre équipe réunit <strong>d’anciens dirigeants</strong>, <strong>DRH</strong>, <strong>consultants en transformation</strong>  
+          et <strong>chasseurs de têtes issus directement de l’industrie</strong>.  
+          Ils connaissent ses rythmes, ses cultures et ses équilibres,  
+          où <strong style="color:#45D1FF;">la pression du résultat</strong> s’allie à <strong>l’émotion</strong>  
+          et où chaque décision engage le collectif.<br><br>
+
+          Nous intervenons auprès de <strong>clubs professionnels</strong>, <strong>fédérations</strong>, <strong>ayants droit</strong>,  
+          <strong>sponsors</strong>, <strong>équipementiers</strong>, <strong>diffuseurs</strong>, <strong>agences</strong>,  
+          <strong>start-ups de la SportTech</strong>, <strong>comités d’organisation</strong> et <strong>investisseurs</strong>.  
+          Nos missions couvrent l’ensemble des fonctions de leadership :  
+          <strong>direction générale</strong>, <strong>marketing</strong>, <strong>digital</strong>, <strong>commerciale</strong>,  
+          <strong>financière</strong>, <strong>sportive</strong> et <strong>performance</strong>.<br><br>
+
+          Au-delà du recrutement, nous accompagnons les dirigeants dans leurs <strong>transitions</strong>,  
+          leurs <strong>choix stratégiques</strong> et leurs <strong>transformations humaines</strong>.  
+          Car dans le sport plus que partout ailleurs,  
+          <strong style="color:#45D1FF;">l’humain n’est pas un levier parmi d’autres</strong> —  
+          il est <strong>la condition même de l’excellence</strong>  
+          et de <strong>l’inspiration collective</strong>.
+        </p>
+      </div>
+
+      <!-- Bouton "En savoir plus" -->
+      <button id="toggleBlocB" style="
+        background:none; border:none; color:#45D1FF; font-weight:600;
+        cursor:pointer; margin-bottom:24px; font-size:16px;
+      " onclick="
+        const longText=document.getElementById('blocB-long');
+        longText.style.display = longText.style.display==='none' ? 'block' : 'none';
+        this.textContent = this.textContent==='En savoir plus' ? 'Réduire' : 'En savoir plus';
+      ">
+        En savoir plus
+      </button>
+      <br>
+
+      <!-- CTA principal -->
+      <a href='/contact' class="sbt-button" style="
+        display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+        font-weight:700; padding:14px 32px; border-radius:36px; font-size:16px;
+        letter-spacing:0.2px; transition:.25s;
+      " onmouseover="this.style.background='#ffffff'; this.style.color='#031034';" onmouseout="this.style.background='#45D1FF'; this.style.color='#031034';">
+        🤝 Prendre un moment pour une discussion confidentielle
+      </a>
+    </div>
+
+    <!-- Colonne image -->
+    <div class="sbt-image" style="
+      flex:1 1 520px; min-width:320px; position:relative;
+    ">
+      <img src="https://i.imgur.com/9QT0y0B.jpeg" 
+           alt="SBT Executive — Sport" 
+           style="
+             width:100%; height:100%; max-height:520px; object-fit:cover;
+             border-radius:16px; box-shadow:0 12px 30px rgba(3,16,52,.12);
+           ">
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc D – Executive Search | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA;
+  --dark:#2E3345;
+  --white:#FFFFFF;
+  --pearl:#ECEFF4;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--navy);
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--pearl); /* ✅ Fond gris perle */
+}
+.search-card{
+  background:var(--white); /* ✅ Carte blanche */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+  flex-direction:row; /* ✅ Image à gauche */
+}
+.search-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+  position:relative;
+}
+.search-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.search-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.search-right img:hover{
+  transform:scale(1.03);
+}
+.search-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.search-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  letter-spacing:.3px;
+  margin:0 0 24px;
+}
+.search-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.search-left strong{color:var(--navy);}
+.opening-line{
+  font-size:16px;
+  font-weight:700;
+  color:var(--cyan); /* ✅ Bleu clair */
+  margin-bottom:10px;
+  text-transform:none; /* ✅ minuscules sauf la première lettre */
+}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.expand p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+}
+.cta{
+  margin-top:32px;
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .search-card{
+    flex-direction:column;
+  }
+  .search-left,.search-right{
+    flex:100%;
+    padding:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+
+<div class="search-card">
+
+  <!-- ✅ Colonne image (à gauche) -->
+  <div class="search-right">
+    <img src="https://i.imgur.com/6WrzJA2.jpeg" alt="Executive Search – SBT Executive">
+  </div>
+
+  <!-- ✅ Colonne texte -->
+  <div class="search-left">
+    <h1>Executive Search</h1>
+    <p class="opening-line">Une fois les écosystèmes compris, nous lançons la recherche la plus ciblée.</p>
+    <h2>Une approche “executive search” sectorielle et rigoureusement structurée</h2>
+
+    <p><strong>Recruter un leader est un acte stratégique</strong>, dont l’impact se mesure bien au-delà de la prise de poste.  
+    Chez <strong>SBT Executive</strong>, nous menons nos missions de recherche avec une <strong>méthodologie rigoureuse, éprouvée et confidentielle</strong>, issue des environnements les plus exigeants du sport, de l’entertainment et du leisure.</p>
+
+    <p>Chaque mission est conduite avec un haut niveau d’<strong>exigence, de précision et de confidentialité</strong>, jusqu’à la prise de poste du dirigeant sélectionné.</p>
+
+    <button class="toggle" data-target="#search-expand">En savoir plus</button>
+
+    <div class="expand" id="search-expand">
+
+      <h3>💡 Problématiques clients</h3>
+      <ul>
+        <li>Comment identifier les bons profils dans un marché de talents restreint ?</li>
+        <li>Comment attirer des leaders déjà en poste, souvent peu visibles ou très sollicités ?</li>
+        <li>Comment sécuriser une décision stratégique sans perdre en agilité ni en rapidité ?</li>
+        <li>Comment garantir un alignement culturel et une intégration réussie ?</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <ul>
+        <li><strong>Ciblage précis</strong> de 100 à 200 talents selon la complexité de la mission et la maturité du marché.</li>
+        <li><strong>Benchmark sectoriel et intersectoriel</strong> pour identifier des profils différenciants et transférables.</li>
+        <li><strong>Évaluation structurée</strong> à travers une grille sur 10 critères : compétences, style de leadership, motivations et alignement culturel.</li>
+        <li><strong>Shortlist stratégique</strong> de 5 à 6 leaders : évalués, motivés, disponibles et alignés sur les attentes du poste.</li>
+      </ul>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li><strong>Réduction du risque</strong> de recrutement et gain de temps significatif.</li>
+        <li><strong>Accès direct</strong> à des profils rares et hautement qualifiés grâce à plus de 15 ans de réseau actif.</li>
+        <li><strong>Évaluation fine et objective</strong>, garantissant un meilleur “fit” et une meilleure rétention.</li>
+        <li><strong>Intégration fluide et accompagnée</strong> jusqu’à la prise de poste pour assurer la réussite de la mission.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Cédric Le Nest</strong> — Managing Partner, expert en recrutement de dirigeants pour les industries du sport et de l’entertainment.</li>
+        <li><strong>Daniel Woh</strong> — Partner, spécialiste des environnements complexes et internationaux.</li>
+        <li><strong>Tom Sears</strong> — Senior Partner, ancien dirigeant d’organisations sportives, expert en gouvernance et stratégie de leadership.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#search-expand">▲ Réduire</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

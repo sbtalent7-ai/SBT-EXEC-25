@@ -1,0 +1,82 @@
+<!-- ✅ BLOC G — PRISE DE CONTACT (FR) — VERSION FINALE PREMIUM SBT EXECUTIVE -->
+<section class="sbt-block" style="position:relative; background-color:#061338; color:#ffffff; padding:120px 0; overflow:hidden;">
+  <!-- 🌌 IMAGE DE FOND -->
+  <div style="background-image:url('https://www.sbtexecutive.com/wp-content/uploads/2025/01/contact-bg-sbt.jpg'); background-size:cover; background-position:center; opacity:0.1; position:absolute; inset:0; z-index:0;"></div>
+
+  <div class="sbt-container" style="position:relative; z-index:2; max-width:1100px; margin:0 auto; text-align:left; font-family:'Lato',sans-serif; padding:0 20px;">
+    
+    <!-- 🧭 TITRES -->
+    <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:700; color:#ffffff; margin-bottom:20px;">
+      Et si nous en parlions&nbsp;?
+    </h2>
+    <h3 style="font-size:22px; font-weight:500; color:#45D1FF; margin-bottom:35px;">
+      Un enjeu de leadership, une transformation à conduire, un recrutement clé&nbsp;? Engageons la conversation.
+    </h3>
+
+    <!-- 💬 INTRO -->
+    <p style="font-size:17px; line-height:1.8; color:#e8e8e8; max-width:850px; margin-bottom:40px;">
+      Qu’il s’agisse d’un <strong>recrutement stratégique</strong>, d’un <strong>accompagnement dirigeant</strong> ou d’une <strong>évolution organisationnelle</strong>,  
+      nous accompagnons les entreprises et les leaders avec exigence, confidentialité et impact.  
+      Chez <strong>SBT Executive</strong>, chaque mission commence par une conversation — car à ce niveau, la confiance précède toujours la décision.
+    </p>
+
+    <!-- 🩶 LEAD MAGNET -->
+    <div style="background:#f4f4f4; border-radius:12px; padding:25px 30px; margin-bottom:45px; max-width:850px;">
+      <h4 style="color:#061338; font-size:18px; font-weight:600; margin-bottom:10px;">
+        📘 Ressource exclusive
+      </h4>
+      <p style="font-size:16px; line-height:1.75; color:#061338; margin:0;">
+        <strong>Les 8 erreurs les plus coûteuses dans le recrutement de dirigeants</strong> — édition spéciale <em>Sport, Entertainment & Leisure</em>.  
+        Cette étude met en lumière les causes souvent invisibles des échecs de recrutement exécutif et propose des leviers concrets pour les éviter.
+      </p>
+    </div>
+
+    <!-- 🎯 CTA PRINCIPAL + LEAD MAGNET -->
+    <div style="display:flex; flex-wrap:wrap; justify-content:flex-start; gap:20px; margin-top:30px;">
+      <a href="https://calendly.com/clenest-sbt" target="_blank" class="sbt-button" style="background:#45D1FF; color:#061338; font-weight:700; padding:16px 34px; border-radius:10px; text-decoration:none; transition:0.3s;">
+        🤝 Planifier un échange confidentiel
+      </a>
+      <button onclick="document.getElementById('download-form-fr').style.display='block';" class="sbt-button" style="background:transparent; color:#ffffff; font-weight:700; padding:16px 34px; border:2px solid #45D1FF; border-radius:10px; cursor:pointer; transition:0.3s;">
+        📘 Télécharger l’étude
+      </button>
+    </div>
+
+    <!-- 🧾 FORMULAIRE DE TÉLÉCHARGEMENT -->
+    <form id="download-form-fr" style="display:none; margin-top:40px; background:#f4f4f4; padding:30px; border-radius:12px; max-width:650px;">
+      <h4 style="color:#061338; font-weight:600; margin-bottom:15px;">Téléchargez votre ressource</h4>
+      <p style="color:#061338; font-size:15px; margin-bottom:20px;">Remplissez ce court formulaire pour accéder à l’étude immédiatement.</p>
+      <input type="text" name="Nom" placeholder="Nom complet" required style="width:100%; padding:12px; margin-bottom:12px; border:none; border-radius:6px;">
+      <input type="email" name="Email" placeholder="Email professionnel" required style="width:100%; padding:12px; margin-bottom:12px; border:none; border-radius:6px;">
+      <input type="text" name="Fonction" placeholder="Fonction / Entreprise" style="width:100%; padding:12px; margin-bottom:20px; border:none; border-radius:6px;">
+      <button type="submit" style="background:#061338; color:#ffffff; font-weight:700; padding:12px 28px; border:none; border-radius:8px; cursor:pointer;">
+        Recevoir le PDF
+      </button>
+      <p id="confirmation-fr" style="display:none; margin-top:15px; color:#061338; font-size:15px; font-weight:600;">✅ Merci — votre ressource est en cours de téléchargement.</p>
+    </form>
+
+    <!-- ✨ PHRASE DE CLÔTURE NARRATIVE -->
+    <p style="font-style:italic; color:#45D1FF; margin-top:60px; max-width:700px;">
+      Derrière chaque collaboration, il y a une rencontre — celle de valeurs, d’ambitions et de visions communes.  
+      C’est ainsi que naissent les partenariats durables.
+    </p>
+
+  </div>
+</section>
+
+<!-- ⚙️ JS -->
+<script>
+document.getElementById('download-form-fr').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // ✅ Téléchargement automatique du PDF (version locale)
+  window.open('http://sbt-executive-2025.local/wp-content/uploads/2025/11/SBT-Executive-LM-8-Mistakes-FR-compresse.pdf', '_blank');
+
+  // ✅ Message de confirmation
+  const confirmation = document.getElementById('confirmation-fr');
+  confirmation.style.display = 'block';
+  confirmation.textContent = '✅ Merci — votre ressource est en cours de téléchargement.';
+
+  // ✅ Réinitialisation du formulaire
+  this.reset();
+});
+</script>

@@ -1,0 +1,169 @@
+<!-- ✅ BLOC E — QUI NOUS SOMMES (fond légèrement teinté #F9FBFD) -->
+<section class="sbt-about" aria-labelledby="about-title">
+  <div class="sbt-about-wrap">
+    <div class="sbt-about-grid">
+
+      <!-- 🧭 TEXTE À GAUCHE -->
+      <div class="sbt-about-text">
+        <p class="sbt-kicker">Qui nous sommes</p>
+        <h2 id="about-title">Une boutique dédiée au leadership et à la transformation humaine</h2>
+
+        <p>
+          <strong>SBT Executive</strong> est une boutique indépendante dédiée au <strong>recrutement</strong> et à <strong>l’accompagnement des dirigeants et talents clés</strong> dans les univers du <strong>sport</strong>, de <strong>l’entertainment</strong> et des <strong>loisirs</strong>.
+        </p>
+
+        <p>
+          À la croisée de l’<strong>Executive Search</strong> et du <strong>Leadership Advisory</strong>, nous aidons les organisations à <strong>attirer les bons profils</strong>, 
+          <strong>sécuriser leurs recrutements stratégiques</strong> et <strong>développer le plein potentiel</strong> de leurs équipes.
+        </p>
+
+        <button class="toggle-btn" onclick="toggleAbout()">Lire la suite ▾</button>
+
+        <div class="toggle-content" id="about-content">
+          <p>
+            Notre équipe rassemble d’<strong>anciens dirigeants</strong>, <strong>DRH</strong>, <strong>coachs</strong> et <strong>experts</strong> issus de ces univers — mais aussi de secteurs adjacents — 
+            alliant une <strong>expérience terrain approfondie</strong> à des <strong>regards neufs</strong>, des <strong>idées inspirantes</strong> et des <strong>pratiques éprouvées</strong>.
+          </p>
+          <p>
+            <strong>Notre ambition :</strong> accroître l’impact, élever la performance individuelle et collective, et renforcer la réussite durable de nos clients.
+          </p>
+          <a href="/our-services" class="sbt-cta-link">→ Découvrir nos pôles d’expertise</a>
+        </div>
+      </div>
+
+      <!-- 🎯 IMAGE À DROITE -->
+      <div class="sbt-about-visual">
+        <img src="https://i.imgur.com/vuy25tB.jpeg" alt="Équipe SBT Executive" loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+:root{
+  --navy:#031034;
+  --cyan:#45D1FF;
+  --gray:#D9D9D9;
+}
+
+/* 🌐 SECTION GLOBALE */
+.sbt-about{
+  background:#F9FBFD; /* ✅ fond légèrement teinté, bleu glacé */
+  padding:80px 20px;
+  font-family:'Lato',sans-serif;
+  color:#2E3345;
+}
+.sbt-about-wrap{
+  max-width:1200px;
+  margin:0 auto;
+}
+.sbt-about-grid{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+/* 🧭 TEXTE */
+.sbt-about-text{
+  flex:1 1 55%;
+  text-align:left;
+}
+.sbt-about-text .sbt-kicker{
+  color:var(--cyan);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  margin-bottom:10px;
+}
+.sbt-about-text h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(26px,3vw,34px);
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:20px;
+}
+.sbt-about-text p{
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+/* ✴️ TOGGLE + LIENS */
+.toggle-btn{
+  border:none;
+  background:none;
+  color:var(--cyan);
+  font-weight:700;
+  cursor:pointer;
+  padding:0;
+  font-size:15px;
+  margin-bottom:10px;
+}
+.toggle-content{
+  display:none;
+  margin-top:10px;
+  animation:fadeIn .3s ease-in-out;
+}
+
+/* 🎯 CTA animé */
+.sbt-cta-link{
+  display:inline-block;
+  margin-top:10px;
+  font-weight:700;
+  color:var(--cyan);
+  text-decoration:none;
+  transition:all .3s ease;
+  position:relative;
+}
+.sbt-cta-link:hover{
+  color:var(--navy);
+  transform:translateY(-2px);
+  box-shadow:0 4px 10px rgba(69,209,255,0.3);
+  text-decoration:underline;
+}
+
+/* 🖼️ IMAGE */
+.sbt-about-visual{
+  flex:1 1 40%;
+  text-align:center;
+}
+.sbt-about-visual img{
+  max-width:85%;
+  height:auto;
+  border-radius:16px;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+
+/* 📱 RESPONSIVE */
+@media(max-width:960px){
+  .sbt-about-grid{
+    flex-direction:column;
+    text-align:center;
+  }
+  .sbt-about-text{
+    text-align:center;
+  }
+  .sbt-about-visual img{
+    max-width:70%;
+  }
+}
+
+/* 🌈 ANIMATIONS */
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+</style>
+
+<script>
+function toggleAbout(){
+  const content=document.getElementById('about-content');
+  const btn=document.querySelector('.toggle-btn');
+  const open=content.style.display==='block';
+  content.style.display=open?'none':'block';
+  btn.innerHTML=open?'Lire la suite ▾':'Réduire ▲';
+}
+</script>

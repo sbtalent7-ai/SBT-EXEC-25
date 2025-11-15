@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc E – AI & Future Leadership | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA; /* Gris perle */
+  --dark:#2E3345;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--white); /* ✔️ Fond blanc */
+}
+
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white); /* ✔️ Fond blanc */
+}
+
+.diagnostic-card{
+  background:var(--light); /* ✔️ Carte gris perle */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+}
+
+/* Colonne gauche = texte */
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+
+/* Colonne droite = image */
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--white);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  margin:0 0 24px;
+}
+
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  margin:0 0 16px;
+}
+
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+
+.expand{
+  display:none;
+  margin-top:20px;
+}
+
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left, .diagnostic-right{flex:100%;padding:30px;}
+  .diagnostic-right img{height:260px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- TEXTE à gauche -->
+  <div class="diagnostic-left">
+    <h1>AI & Future Leadership</h1>
+    <h2>Préparer les dirigeants au versant humain de l’intelligence artificielle — transformer la disruption en évolution du leadership</h2>
+
+    <p><strong>L’intelligence artificielle redéfinit la manière dont les dirigeants pensent, décident et collaborent.</strong></p>
+    <p>Nous aidons les dirigeants à transformer cette disruption en levier d’évolution stratégique — en faisant de l’IA non pas un défi technique, mais un avantage humain et culturel.  
+    Chez SBT Executive, nous accompagnons les leaders pour qu’ils fassent de l’intelligence artificielle une opportunité stratégique et humaine, renforçant leur capacité à diriger avec clarté, impact et sens dans un environnement en transformation.</p>
+
+    <button class="toggle" data-target="#ai-expand">En savoir plus</button>
+
+    <div class="expand" id="ai-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Compréhension stratégique limitée de l’impact et des opportunités de l’IA.</li>
+        <li>Difficulté à intégrer la culture technologique au sein des équipes dirigeantes.</li>
+        <li>Risque de perte de légitimité face à l’accélération digitale.</li>
+        <li>Résistance ou crainte des équipes face à l’adoption de l’IA.</li>
+      </ul>
+
+      <h3>🧭 Notre approche</h3>
+      <p>Nous aidons les équipes dirigeantes à intégrer l’IA avec clarté stratégique et intelligence humaine à travers une démarche en quatre étapes :</p>
+      <ul>
+        <li><strong>1️⃣ Diagnostic IA & Leadership</strong> — évaluation de la maturité digitale et de la préparation au leadership augmenté par l’IA.</li>
+        <li><strong>2️⃣ Expériences d’apprentissage</strong> — sessions immersives explorant les enjeux stratégiques, éthiques et humains de l’IA.</li>
+        <li><strong>3️⃣ Coaching en leadership augmenté</strong> — accompagnement individuel pour intégrer l’IA dans la prise de décision, l’influence et la communication.</li>
+        <li><strong>4️⃣ Culture & design de transformation</strong> — aide à l’ancrage d’une culture d’innovation et de responsabilité autour de l’IA.</li>
+      </ul>
+
+      <h3>✨ Bénéfices clients</h3>
+      <ul>
+        <li>Vision claire et stratégique du rôle de l’IA dans le leadership.</li>
+        <li>Dirigeants crédibles et confiants dans la transformation digitale.</li>
+        <li>Anticipation des impacts humains et organisationnels.</li>
+        <li>Culture de l’IA partagée et réaliste à tous les niveaux de leadership.</li>
+        <li>Leadership différencié, prêt pour l’avenir.</li>
+      </ul>
+
+      <h3>👥 Expert clé</h3>
+      <ul>
+        <li><strong>Jean-Baptiste Durand</strong> — Senior Advisor, expert en transformation IA et stratégie digitale. Il aide les dirigeants à relier le potentiel technologique à l’évolution humaine et culturelle.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#ai-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE à droite -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/46hYMlu.png" alt="AI & Future Leadership – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

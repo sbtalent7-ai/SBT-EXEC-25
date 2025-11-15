@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc B – Laurent Riffault & Antoine Leygonie | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --light:#F5F7FA; --dark:#2E3345;
+  --white:#FFFFFF; --pearl:#ECEFF4; --title:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:'Lato',sans-serif;color:var(--dark);background:var(--navy);
+}
+
+/* Section - fond bleu */
+.section-wrapper{
+  padding:30px 0 10px;
+  background:var(--navy);
+  position:relative;
+}
+
+/* Ligne bleue séparatrice */
+.section-wrapper::after{
+  content:"";
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:2px;
+  background:rgba(69,209,255,0.3);
+}
+
+/* Grille principale */
+.experts-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  max-width:100%;margin:0 auto;
+  padding:25px 0 25px;
+}
+
+/* Cartes uniformisées */
+.profile-card{
+  width:48%;
+  background:var(--white);
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:16px;
+  transition:transform .25s ease, box-shadow .25s ease;
+  position:relative;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+
+/* Haut des cartes (gris) */
+.profile-header{
+  background:var(--pearl);
+  padding:20px;
+  color:var(--dark);
+  position:relative;
+}
+
+/* Photo */
+.profile-photo{
+  position:absolute;top:20px;right:20px;width:120px;height:120px;
+  object-fit:contain;border:3px solid var(--cyan);border-radius:12px;
+  background:var(--white);
+  box-shadow:0 0 15px rgba(69,209,255,.35);
+}
+
+/* Infos hautes */
+.profile-info{padding-right:150px;}
+.profile-info h1{margin:0;font-size:28px;font-weight:900;color:var(--navy);}
+.profile-info h2{margin:4px 0 8px;font-size:17px;font-weight:700;color:var(--dark);}
+.primary-expertise{font-size:14px;font-weight:900;color:var(--cyan);}
+.location{font-weight:700;color:#5C637A;margin-top:6px;font-size:14px;}
+
+/* Intro */
+.intro{
+  display:block;margin-top:14px;padding-top:12px;border-top:1px solid rgba(6,19,56,.1);
+  font-size:14px;line-height:1.6;color:var(--dark);
+}
+.intro strong{color:var(--navy);}
+
+/* CTA */
+.cta{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:12px;margin-top:14px;}
+.cta a{
+  flex:1;background:var(--cyan);color:var(--navy);text-decoration:none;padding:9px 0;
+  text-align:center;border-radius:8px;font-weight:800;font-size:13px;transition:.18s;
+}
+.cta a:hover{background:var(--navy);color:var(--white);}
+.cta .toggle{
+  width:100%;margin-top:10px;background:none;border:1.6px solid var(--cyan);
+  color:var(--cyan);padding:9px 0;border-radius:8px;font-weight:900;font-size:13px;
+  cursor:pointer;text-align:center;
+}
+.cta .toggle:hover{background:var(--cyan);color:var(--navy);}
+
+/* Fiche complète */
+.expand{display:none;background:var(--white);}
+.expand section{padding:18px 24px;border-bottom:1px solid #E6EBF2;}
+.expand section:nth-child(even){background:#F7F8FB;}
+.expand h3{
+  color:var(--cyan);font-weight:900;text-transform:uppercase;
+  margin:0 0 10px;text-shadow:0 0 10px rgba(69,209,255,.25);
+}
+.expand p,.expand li{font-size:14px;line-height:1.8;color:var(--dark);}
+.expand ul{list-style:none;padding:0;margin:8px 0 18px;}
+.expand li::before{content:"▸ ";color:var(--cyan);font-weight:900;}
+.close-row{text-align:center;margin:15px 0 25px;}
+.close-row .toggle{border-color:#d3d8e2;}
+
+/* Responsive */
+@media(max-width:960px){
+  .profile-card{width:100%;}
+  .profile-photo{position:relative;top:0;right:0;margin:0 auto 20px;display:block;}
+  .profile-info{padding-right:0;text-align:center;}
+  .cta a{flex:100%;}
+  .expand section{padding:18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="experts-grid">
+
+<!-- === LAURENT RIFFAULT === -->
+<div class="profile-card" id="laurent-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/XNu9HHB.png" alt="Laurent Riffault">
+    <div class="profile-info">
+      <h1>Laurent Riffault</h1>
+      <h2>Leading Partner – Pilier “Prepare” <span class="primary-expertise">| Succession & Future Leadership</span></h2>
+      <p class="location">📍 Paris, France — 🌍 Europe / Asie / Amérique du Nord</p>
+    </div>
+    <p class="intro">
+      <strong>25+ ans comme Directeur RH international</strong> pour des groupes mondiaux tels que <strong>Disney, Michael Kors et Logicor (Blackstone)</strong>.  
+      Expert en <strong>M&A, succession et continuité du leadership</strong> pour les organisations globales complexes.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’une problématique de leadership</a>
+      <a href="/succession-future-leadership" target="_blank">💼 En savoir plus<br><span>Succession & Future Leadership</span></a>
+      <button class="toggle" data-target="#laurent-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="laurent-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Laurent Riffault</strong> est <strong>Leading Partner</strong> chez <strong>SBT Executive</strong> et ancien <strong>Directeur des Ressources Humaines international</strong> pour des groupes de premier plan tels que <strong>Logicor (Blackstone Group)</strong>, <strong>Michael Kors</strong>, <strong>The Walt Disney Company</strong> et <strong>DentalMonitoring</strong>.  
+      Fort de plus de <strong>25 ans d’expérience internationale</strong> à travers <strong>l’Europe, l’Asie et l’Amérique du Nord</strong>, il s’est imposé comme un conseiller stratégique auprès des conseils d’administration, dirigeants et investisseurs.</p>
+      <p>Laurent est spécialisé dans les <strong>plans de succession</strong>, la <strong>continuité du leadership</strong> et les <strong>transformations liées aux fusions et acquisitions</strong>, aidant les organisations à sécuriser leur gouvernance et leur alignement culturel dans la durée.  
+      Son approche pragmatique, fondée sur une compréhension fine des dynamiques humaines et stratégiques, fait de lui un partenaire de confiance dans les contextes de changement.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Succession Planning & Leadership Continuity</li>
+        <li>Board Advisory & Talent Strategy</li>
+        <li>M&A & Intégration Culturelle</li>
+        <li>Diagnostics Organisationnels</li>
+        <li>Change Leadership</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>25+ ans d’expérience RH internationale</strong> au sein de groupes mondiaux tels que <strong>Disney</strong>, <strong>Michael Kors</strong>, <strong>Logicor (Blackstone)</strong> et <strong>DentalMonitoring</strong>.</li>
+        <li><strong>Expert des transitions complexes</strong> — M&A, succession, intégration post-fusion — alliant stratégie, gouvernance et capital humain.</li>
+        <li><strong>A dirigé la stratégie RH paneuropéenne de Logicor (Blackstone)</strong> et accompagné la cession du groupe pour <strong>12 milliards d’euros</strong>, l’une des plus importantes transactions du secteur immobilier européen.</li>
+        <li><strong>Expérience multisectorielle</strong> (luxe, entertainment, retail, immobilier, technologie) au service de la durabilité du leadership et de la performance organisationnelle.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références</h3>
+      <p><strong>Pour des raisons de confidentialité</strong>, seule une sélection de collaborations est présentée ci-dessous, illustrant la diversité des environnements accompagnés par Laurent.</p>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Grands groupes & Corporate</h4>
+      <ul><li>The Walt Disney Company, Michael Kors, Logicor (Blackstone Group), DentalMonitoring, Sofyne, Solera Holdings</li></ul>
+      <p><em>Ces collaborations témoignent de sa capacité à piloter les transitions de leadership, l’intégration culturelle et la transformation organisationnelle dans des environnements globaux complexes.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#laurent-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+<!-- === ANTOINE LEYGONIE === -->
+<div class="profile-card" id="antoine-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/3otLOkA.png" alt="Antoine Leygonie">
+    <div class="profile-info">
+      <h1>Antoine Leygonie</h1>
+      <h2>Leading Partner – Pilier “Develop” <span class="primary-expertise">| Leadership Development</span></h2>
+      <p class="location">📍 Paris, France — 🌍 Europe / Moyen-Orient / Asie / Amérique du Nord</p>
+    </div>
+    <p class="intro">
+      <strong>Polytechnicien, docteur en philosophie et ancien dirigeant international</strong>, Antoine est le <strong>fondateur de CADRAN – Boutique International Executive Coaching</strong> et <strong>partenaire de SBT Executive</strong>.  
+      Il accompagne les <strong>dirigeants du CAC 40 et de groupes mondiaux</strong>, enseigne à <strong>Stanford, Oxford et HEC</strong> et les aide à <strong>devenir des leaders inspirants</strong>.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Planifier un échange confidentiel</a>
+      <a href="/leadership-development" target="_blank">💼 En savoir plus<br><span>Leadership Development</span></a>
+      <button class="toggle" data-target="#antoine-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="antoine-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Diplômé de l’École Polytechnique et docteur en philosophie</strong>, <strong>Antoine Leygonie</strong> est <strong>Leading Partner</strong> chez <strong>SBT Executive</strong> et fondateur de <strong>CADRAN</strong>, un cabinet boutique international spécialisé dans le coaching de dirigeants. <strong>Coach MCC (ICF)</strong>, il pilote un réseau mondial de coachs opérant dans <strong>30 pays</strong> et <strong>8 langues</strong>, accompagnant les dirigeants du <strong>CAC 40</strong> et d’organisations internationales.</p>
+      <p><strong>Ancien dirigeant international</strong>, Antoine a conçu la méthodologie <em>CO-CREATiVE Communication®</em>, déployée auprès de comités exécutifs pour renforcer la <strong>cohésion</strong>, la <strong>clarté décisionnelle</strong> et la <strong>responsabilité partagée</strong>. Son approche conjugue <strong>analyse stratégique</strong>, <strong>intelligence relationnelle</strong> et <strong>profondeur culturelle</strong> au service des transformations et transitions de leadership complexes.</p>
+    </section>
+
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Leadership Development & Executive Coaching</li>
+        <li>Leadership Reset & Transformation</li>
+        <li>Développement des hauts potentiels</li>
+        <li>Onboarding & Executive Assessment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Ancien dirigeant international</strong> devenu coach de dirigeants, avec plus de <strong>15 ans d’expérience</strong> en Executive Coaching sur quatre continents.</li>
+        <li><strong>Coach MCC (ICF)</strong> – top 5 % mondial – et <strong>fondateur de CADRAN</strong>, présent dans 30 pays et 8 langues.</li>
+        <li><strong>Intervenant et coach affilié</strong> auprès de <strong>Stanford</strong>, <strong>Harvard</strong>, <strong>Oxford</strong>, <strong>INSEAD</strong>, <strong>HEC</strong>, <strong>ESSEC</strong> et <strong>Sciences Po</strong>.</li>
+        <li><strong>Créateur de la méthode <em>CO-CREATiVE Communication®</em></strong>, utilisée par les comités exécutifs de <strong>LVMH</strong>, <strong>L’Oréal</strong>, <strong>Safran</strong>, <strong>TotalEnergies</strong> et <strong>Publicis</strong>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Références</h3>
+      <p><strong>Antoine a accompagné des dirigeants et équipes exécutives</strong> au sein de grandes entreprises internationales issues du luxe, de l’industrie, de la santé, de l’énergie, de la finance et du sport business.</p>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Références Sélectives</h4>
+      <ul>
+        <li>LVMH, Hermès, L’Oréal, Sanofi, Safran, Vinci, Société Générale, BNP Paribas, Engie, TotalEnergies, Air Liquide, Roche, Publicis, Renault, SAP…</li>
+      </ul>
+      <p><em>Pour des raisons de confidentialité, seules certaines collaborations sont mentionnées. D’autres missions ont été menées en Europe, au Moyen-Orient, en Asie et en Amérique du Nord.</em></p>
+    </section>
+
+    <div class="close-row">
+      <button class="toggle" data-target="#antoine-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

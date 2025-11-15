@@ -1,0 +1,112 @@
+<!-- ✅ HERO – Contact / Un échange peut tout changer (Version FR finale épurée, texte court + long) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/CaM1Zig.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.6);
+  "></div>
+
+  <!-- Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 56, 0.55);
+  "></div>
+
+  <!-- Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+  ">
+    <div class="sbt-text" style="
+      max-width: 740px;
+      backdrop-filter: blur(6px);
+      background: rgba(6, 19, 56, 0.35);
+      border-radius: 16px;
+      padding: 48px;
+    ">
+
+      <!-- Titre -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Un échange peut tout changer
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        Chez <strong>SBT Executive</strong>, nous croyons à la force des rencontres bien ciblées.  
+        Qu’il s’agisse de structurer une <strong>mission stratégique</strong>  
+        ou d’envisager une <strong>nouvelle étape professionnelle</strong>,  
+        chaque échange compte.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="longTextContactFR" style="display:none; margin-bottom:24px;">
+        <p style="font-size:17px; line-height:1.8; color:#D9D9D9;">
+          Cette page vous permet de nous contacter directement selon votre profil.  
+          Les <strong>organisations</strong> peuvent partager leurs besoins en  
+          <strong>recrutement</strong>, <strong>transformation</strong> ou <strong>coaching</strong> ;  
+          les <strong>talents</strong> expérimentés peuvent déposer leur profil en toute confidentialité.  
+          Chaque contact est traité avec <strong>attention</strong>, <strong>discrétion</strong>  
+          et <strong>professionnalisme</strong>.
+        </p>
+      </div>
+
+      <!-- Bouton pour afficher le texte long -->
+      <button id="toggleTextBtnContactFR" style="
+        background: transparent;
+        color: #45D1FF;
+        border: 1px solid #45D1FF;
+        padding: 10px 26px;
+        border-radius: 40px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 8px;
+      " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+         onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+        En savoir plus
+      </button>
+
+      <!-- Signature -->
+      <p style="
+        font-size:18px;
+        color:#45D1FF;
+        font-weight:600;
+        margin-top:28px;
+      ">
+        Parce qu’une rencontre peut créer un impact durable.
+      </p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('toggleTextBtnContactFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextContactFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

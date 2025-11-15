@@ -1,0 +1,131 @@
+<!-- ✅ BLOC A — HERO INTRODUCTION EXECUTIVE SEARCH (Version FR – inspirante & premium) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- 🖼️ Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/d88Vwl4.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- 🔷 Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 16, 52, 0.68);
+  "></div>
+
+  <!-- 🧭 Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    color: #FFFFFF;
+    text-align: left;
+  ">
+
+    <div class="sbt-text" style="max-width: 720px;">
+      <!-- 🏷️ Sur-titre -->
+      <p style="
+        text-transform: uppercase;
+        color: #45D1FF;
+        font-weight: 700;
+        letter-spacing: .05em;
+        margin-bottom: 10px;
+      ">
+        Executive Search
+      </p>
+
+      <!-- 💬 Titre principal -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 18px;
+        color: #FFFFFF;
+      ">
+        Identifier et attirer les leaders qui façonnent l’avenir
+      </h2>
+
+      <!-- 🪶 Texte court inspirationnel -->
+      <p style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #D9D9D9;
+        margin-bottom: 28px;
+      ">
+        Chez <strong>SBT Executive</strong>, nous accompagnons les organisations à 
+        <strong>recruter les talents stratégiques</strong> capables de transformer durablement leur environnement.  
+        Nous croyons que le succès d’un dirigeant ne dépend pas seulement de ses compétences,  
+        mais de sa <strong>capacité à s’aligner avec la vision, la culture et le tempo d’une organisation</strong>.
+      </p>
+
+      <!-- 📄 Texte long (masqué par défaut) -->
+      <div id="longTextExecSearchFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.85; color: #D9D9D9;">
+          Nous intervenons lorsqu’il faut <strong>renforcer une équipe dirigeante</strong>,  
+          <strong>accélérer une transformation</strong> ou <strong>trouver les talents qui manquent</strong> pour franchir une nouvelle étape.  
+          Notre rôle est d’être un partenaire stratégique à vos côtés : comprendre vos enjeux,  
+          cartographier les meilleurs profils du marché, évaluer leur impact potentiel,  
+          et sécuriser leur intégration pour qu’ils réussissent avec vous.
+          <br><br>
+          Notre approche d’Executive Search repose sur quatre leviers modulaires et complémentaires :  
+          <br><br>
+          <strong style="color:#45D1FF;">1️⃣ Talent Mapping</strong> — Identifier et cartographier les meilleurs profils du marché. <br>
+          <strong style="color:#45D1FF;">2️⃣ Strategic Assessment</strong> — Évaluer objectivement la valeur et le potentiel des candidats. <br>
+          <strong style="color:#45D1FF;">3️⃣ Executive Search</strong> — Attirer, engager et sélectionner les leaders les plus adaptés. <br>
+          <strong style="color:#45D1FF;">4️⃣ Strategic Onboarding</strong> — Accompagner la transition et activer les conditions de réussite.  
+          <br><br>
+          Ces modules peuvent être combinés ou déployés indépendamment selon le contexte —  
+          qu’il s’agisse d’un recrutement clé, d’une réflexion de succession ou d’une cartographie de talents stratégiques.
+        </p>
+      </div>
+
+      <!-- 🧭 Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnExecSearchFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/executive-search" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          Découvrir notre approche
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚙️ Script JS -->
+  <script>
+    document.getElementById('toggleTextBtnExecSearchFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextExecSearchFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

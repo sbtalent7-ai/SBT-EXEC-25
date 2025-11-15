@@ -1,0 +1,129 @@
+<!-- HERO – Nos univers d’expertise (Version FR) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/8rTXE2U.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 56, 0.55);
+  "></div>
+
+  <!-- Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+  ">
+    <div class="sbt-text" style="
+      max-width: 720px;
+      backdrop-filter: blur(6px);
+      background: rgba(6, 19, 56, 0.35);
+      border-radius: 16px;
+      padding: 48px;
+    ">
+
+      <!-- Titre -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Les univers qui font vibrer le monde
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        Nous accompagnons <strong style="color:#45D1FF;">les dirigeants et les talents clés</strong> 
+        des univers où l’émotion et la passion rassemblent les gens — 
+        <strong>Sport</strong>, <strong>Entertainment</strong> et <strong>Loisirs</strong> — 
+        là où <strong style="color:#45D1FF;">l’humain fait toute la différence</strong>.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="longTextSectorsFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Nos consultants connaissent ces univers de l’intérieur : 
+          anciens dirigeants, entrepreneurs, DRH ou coachs issus du 
+          <strong>sport</strong>, de <strong>l’entertainment</strong> ou des <strong>médias</strong>.  
+          Ils partagent une compréhension fine de leurs <strong style="color:#45D1FF;">dynamiques, rythmes et codes</strong>.  
+          Cette proximité nous permet de parler le même langage que nos clients 
+          et d’intervenir là où les enjeux sont les plus humains — 
+          <strong>leadership, engagement, transmission, transformation</strong>.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Nous avons également choisi d’intégrer des experts venus d’autres horizons 
+          pour <strong style="color:#45D1FF;">enrichir nos approches</strong> 
+          et croiser les meilleures pratiques issues d’autres univers d’excellence.  
+          Car accompagner les leaders, c’est aussi leur offrir ce qu’ils ne trouvent pas toujours autour d’eux.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Travailler dans ces industries d’émotions, c’est partager une conviction simple :  
+          <strong style="color:#45D1FF;">le succès durable repose sur la capacité à relier les gens, à donner du sens et à incarner des émotions authentiques</strong>.
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnSectorsFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/sectors/sport" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          Découvrir nos expertises sectorielles
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    document.getElementById('toggleTextBtnSectorsFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextSectorsFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

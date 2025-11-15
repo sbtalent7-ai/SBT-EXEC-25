@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc D – Succession Coaching | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; 
+  --cyan:#45D1FF; 
+  --light:#F5F7FA; /* Pearl grey background */
+  --dark:#2E3345;
+  --white:#FFFFFF; /* White card */
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--light); /* ✔️ Pearl grey background */
+}
+
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--light); /* ✔️ Pearl grey background */
+}
+
+.diagnostic-card{
+  background:var(--white); /* ✔️ White card */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+}
+
+/* Image à GAUCHE */
+.diagnostic-left{
+  flex:1 1 45%;
+  background:var(--white);
+  padding:0;
+}
+.diagnostic-left img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Texte à DROITE */
+.diagnostic-right{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+
+.diagnostic-right h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.diagnostic-right h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  margin:0 0 24px;
+}
+
+.diagnostic-right p{
+  font-size:15px;
+  line-height:1.8;
+  margin:0 0 16px;
+}
+
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+
+.expand{
+  display:none;
+  margin-top:20px;
+}
+
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left, .diagnostic-right{flex:100%;padding:30px;}
+  .diagnostic-left img{height:280px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- Colonne gauche : IMAGE -->
+  <div class="diagnostic-left">
+    <img src="https://i.imgur.com/6R3r80I.jpeg" alt="Succession Coaching – SBT Executive">
+  </div>
+
+  <!-- Colonne droite : TEXTE -->
+  <div class="diagnostic-right">
+    <h1>Succession Coaching</h1>
+    <h2>Transformer les transitions en impact — accompagner la relève managériale et l’ancrage d’une nouvelle autorité</h2>
+
+    <p><strong>Dans toute succession, la réussite repose sur l’équilibre entre héritage et renouveau.</strong></p>
+    <p>Nous accompagnons les dirigeants engagés dans une phase de transition sensible — prise de poste après un CEO historique, un fondateur ou un changement de gouvernance — afin d’affirmer leur vision, asseoir leur légitimité et garantir la continuité stratégique.  
+    Ce n’est pas un simple onboarding : c’est un moment décisif de passage de relais qui façonne la performance et la confiance à long terme.</p>
+
+    <button class="toggle" data-target="#coaching-expand">En savoir plus</button>
+
+    <div class="expand" id="coaching-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Reprendre le flambeau d’un dirigeant historique ou fondateur.</li>
+        <li>Gérer les attentes du Conseil et des parties prenantes clés.</li>
+        <li>Maintenir l’équilibre entre continuité et transformation sans perdre l’identité culturelle.</li>
+        <li>Manque de cadre structuré pour asseoir la légitimité du nouveau leader.</li>
+      </ul>
+
+      <h3>🧭 Notre approche</h3>
+      <p>Notre programme de Succession Coaching sécurise la transition managériale et accélère l’impact à travers quatre étapes clés :</p>
+      <ul>
+        <li><strong>1️⃣ Diagnostic du contexte et de l’héritage</strong> — analyse des dynamiques humaines, politiques et culturelles à préserver ou à réinventer.</li>
+        <li><strong>2️⃣ Coaching de leadership de succession</strong> — accompagnement individuel centré sur la posture, la communication et l’alignement stratégique.</li>
+        <li><strong>3️⃣ Alignement systémique</strong> — mobilisation du Conseil et des équipes clés pour ancrer la nouvelle autorité dans la culture de l’organisation.</li>
+        <li><strong>4️⃣ Suivi et calibration</strong> — feedbacks 360° et ajustements continus sur 6 à 9 mois pour consolider la réussite.</li>
+      </ul>
+
+      <h3>✨ Bénéfices clients</h3>
+      <ul>
+        <li>Transitions managériales fluides et crédibles.</li>
+        <li>Meilleure cohérence entre le dirigeant, le Conseil et les équipes.</li>
+        <li>Continuité stratégique et accélération de l’exécution.</li>
+        <li>Réduction des risques politiques et organisationnels.</li>
+      </ul>
+
+      <h3>👥 Experts clés</h3>
+      <ul>
+        <li><strong>Antoine Legonni</strong> — Leading Partner, expert des transitions exécutives complexes dans des environnements internationaux.</li>
+        <li><strong>Kris Perquy</strong> — Senior Partner, spécialiste de la haute performance et du leadership global.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#coaching-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

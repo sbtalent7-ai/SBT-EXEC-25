@@ -1,0 +1,110 @@
+<!-- 🇫🇷 SBT EXECUTIVE — TÉMOIGNAGES CLIENTS (VERSION PREMIUM FR) -->
+<section class="sbt-temoignages" style="background-color:#f3f4f6; padding:100px 0; font-family:'Lato', sans-serif; color:#031034;">
+  <div style="max-width:1000px; margin:0 auto; text-align:center;">
+    
+    <!-- 🧭 TITRE -->
+    <h2 style="font-family:'Playfair Display', serif; font-size:44px; font-weight:700; color:#031034; margin-bottom:10px;">
+      Ils nous font confiance
+    </h2>
+    <h3 style="color:#45D1FF; font-size:22px; font-weight:400; margin-bottom:50px;">
+      Ce que disent nos clients
+    </h3>
+
+    <!-- 🎯 CARROUSEL DE TÉMOIGNAGES -->
+    <div class="temoignages-carousel" style="position:relative; background:#ffffff; border-radius:16px; box-shadow:0 6px 18px rgba(3,16,52,0.1); overflow:hidden;">
+
+      <!-- Slides Container -->
+      <div class="temoignages-track" style="display:flex; transition:transform 0.8s ease;">
+
+        <!-- Slide 1 -->
+        <div class="temoignage-slide" style="min-width:100%; box-sizing:border-box; padding:60px 80px; text-align:center;">
+          <p style="font-family:'Lato',sans-serif; font-size:20px; font-weight:300; line-height:1.8; color:#031034; font-style:italic; max-width:800px; margin:0 auto 55px;">
+            « La collaboration avec SBT Executive, tant sur plusieurs recrutements majeurs que sur l’accompagnement de la transformation organisationnelle de World Rowing, a été très satisfaisante sur le plan humain.  
+            Surtout, elle nous a permis d’atteindre nos objectifs en identifiant les bons candidats pour des postes clés, grâce à un processus rigoureux et structuré. »
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:25px; font-weight:700; color:#031034; margin-bottom:8px;">
+            Vincent Gaillard
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:20px; font-weight:600; color:#45D1FF;">
+            Secrétaire Général — World Rowing, Suisse
+          </p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="temoignage-slide" style="min-width:100%; box-sizing:border-box; padding:60px 80px; text-align:center;">
+          <p style="font-family:'Lato',sans-serif; font-size:20px; font-weight:300; line-height:1.8; color:#031034; font-style:italic; max-width:800px; margin:0 auto 55px;">
+            « Nous sommes très satisfaits de l’accompagnement de SBT Executive dans la recherche de deux profils en Asie.  
+            L’équipe a pris le temps de co-construire le brief avec nous afin de bien comprendre nos besoins.  
+            Elle a ensuite travaillé avec une grande réactivité et une réelle efficacité, tout en respectant notre cahier des charges et notre calendrier, et en nous tenant régulièrement informés de l’avancement du processus. »
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:25px; font-weight:700; color:#031034; margin-bottom:8px;">
+            Florian Lamblin
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:20px; font-weight:600; color:#45D1FF;">
+            Executive Director — UTMB International, France
+          </p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="temoignage-slide" style="min-width:100%; box-sizing:border-box; padding:60px 80px; text-align:center;">
+          <p style="font-family:'Lato',sans-serif; font-size:20px; font-weight:300; line-height:1.8; color:#031034; font-style:italic; max-width:800px; margin:0 auto 55px;">
+            « Nous avons récemment collaboré avec SBT Executive sur plusieurs recrutements stratégiques, parfois complexes, tous couronnés de succès.  
+            Leurs points forts résident dans leur ténacité, leur qualité d’écoute et leur capacité à se remettre en question.  
+            Ils savent explorer des pistes moins évidentes mais souvent très pertinentes.  
+            Je recommande vivement les services et l’expertise de SBT Executive. »
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:25px; font-weight:700; color:#031034; margin-bottom:8px;">
+            Laurent Colette
+          </p>
+          <p style="font-family:'Playfair Display', serif; font-size:20px; font-weight:600; color:#45D1FF;">
+            Group COO — Right to Dream, Espagne / Ex-Directeur Général — Olympique de Marseille, France
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="temoignage-prev" 
+              style="position:absolute; top:50%; left:25px; transform:translateY(-50%);
+                     background:rgba(69,209,255,0.15); border:none; border-radius:50%; 
+                     width:48px; height:48px; color:#031034; font-size:26px; cursor:pointer; transition:0.3s;">
+        &#10094;
+      </button>
+
+      <button class="temoignage-next" 
+              style="position:absolute; top:50%; right:25px; transform:translateY(-50%);
+                     background:rgba(69,209,255,0.15); border:none; border-radius:50%;
+                     width:48px; height:48px; color:#031034; font-size:26px; cursor:pointer; transition:0.3s;">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <!-- Script du Carrousel -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".temoignages-track");
+      const slides = document.querySelectorAll(".temoignage-slide");
+      const next = document.querySelector(".temoignage-next");
+      const prev = document.querySelector(".temoignage-prev");
+      let index = 0;
+
+      function updateCarousel() {
+        track.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % slides.length;
+        updateCarousel();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + slides.length) % slides.length;
+        updateCarousel();
+      }
+
+      next.addEventListener("click", nextSlide);
+      prev.addEventListener("click", prevSlide);
+      setInterval(nextSlide, 5000);
+    });
+  </script>
+</section>

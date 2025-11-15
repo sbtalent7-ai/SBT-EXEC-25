@@ -1,0 +1,142 @@
+<!-- HERO – Nos Références (Version FR Premium, réécrite et améliorée) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/e8Rqa7F.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 56, 0.55);
+  "></div>
+
+  <!-- Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+  ">
+    <div class="sbt-text" style="
+      max-width: 720px;
+      backdrop-filter: blur(6px);
+      background: rgba(6, 19, 56, 0.35);
+      border-radius: 16px;
+      padding: 48px;
+    ">
+
+      <!-- Titre -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Nos Références
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        <strong>SBT Executive</strong> accompagne depuis plus d’une décennie  
+        les dirigeants du <strong>sport</strong>, de l’<strong>entertainment</strong>,  
+        du <strong>loisir</strong> et des <strong>industries créatives</strong>  
+        dans leurs enjeux de <strong>recrutement</strong>,  
+        de <strong>leadership</strong> et de <strong>transformation</strong>.
+      </p>
+
+      <!-- Texte long -->
+      <div id="longTextReferencesFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Établi en <strong>2012</strong> et issu du monde du sport,  
+          notre cabinet s’est ouvert à d’autres univers d’excellence —  
+          <strong>entertainment, loisirs, industries créatives</strong> —  
+          tout en consolidant un savoir-faire reconnu auprès des grandes entreprises du monde <strong>corporate</strong>.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Porté par un <strong>collectif d’experts expérimentés</strong>,  
+          nous intervenons sur des missions de  
+          <strong>recrutement de dirigeants</strong> (Executive Search & Assessment),  
+          de <strong>leadership advisory</strong> et de  
+          <strong>transformation organisationnelle</strong> —  
+          toujours dans une approche <strong>humaine, stratégique et sur mesure</strong>.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Cette section présente un aperçu concret de nos interventions :  
+          <strong>témoignages clients</strong>, <strong>missions de référence</strong>,  
+          et exemples <strong>confidentiels ou anonymisés</strong> lorsque la discrétion s’impose.  
+          Elle reflète notre manière d’agir et notre conviction durable :  
+          <strong style="color:#45D1FF;">la performance humaine précède toujours la réussite organisationnelle.</strong>
+        </p>
+      </div>
+
+      <!-- Signature -->
+      <p style="
+        font-size: 18px;
+        color: #45D1FF;
+        font-weight: 600;
+        margin-bottom: 32px;
+      ">
+        Une même signature incarne notre approche : <strong>Attract. Create. Impact.</strong>
+      </p>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnReferencesFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/our-references" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          👉 Explorer nos références
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('toggleTextBtnReferencesFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextReferencesFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

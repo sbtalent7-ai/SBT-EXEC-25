@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc C – Succession Planning | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; 
+  --cyan:#45D1FF; 
+  --light:#F5F7FA; 
+  --dark:#2E3345;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--white); /* ✔️ Fond blanc */
+}
+
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--white); /* ✔️ Fond blanc */
+}
+
+.diagnostic-card{
+  background:var(--light); /* ✔️ Carte gris perle */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+}
+
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--white);
+}
+
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Titres légèrement renforcés pour contraste sur fond clair */
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  margin:0 0 24px;
+}
+
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  margin:0 0 16px;
+}
+
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+
+.expand{
+  display:none;
+  margin-top:20px;
+}
+
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left,.diagnostic-right{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- Colonne gauche -->
+  <div class="diagnostic-left">
+    <h1>Succession Planning</h1>
+    <h2>Anticiper, structurer et sécuriser la continuité du leadership</h2>
+
+    <p><strong>La succession n’est pas un acte administratif, mais un acte de vision.</strong></p>
+    <p>Nous accompagnons les organisations à identifier leurs rôles critiques, révéler les potentiels internes et bâtir des plans de succession structurés et partagés — pour garantir la continuité du leadership et la résilience à long terme.</p>
+
+    <button class="toggle" data-target="#succession-expand">En savoir plus</button>
+
+    <div class="expand" id="succession-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Transitions de leadership souvent improvisées, sans plan clair.</li>
+        <li>Manque de visibilité sur les rôles critiques et les risques de continuité.</li>
+        <li>Successeurs internes peu préparés ou insuffisamment exposés.</li>
+        <li>Difficulté à transformer la succession en projet collectif et stratégique.</li>
+      </ul>
+
+      <h3>🧭 Notre approche</h3>
+      <p>Nous faisons de la planification de la succession un levier de transformation durable.  
+      Chaque mission s’articule autour de quatre étapes clés :</p>
+      <ul>
+        <li><strong>1️⃣ Cartographie des rôles critiques</strong> — identification des postes sensibles et des dépendances humaines.</li>
+        <li><strong>2️⃣ Évaluation des potentiels internes</strong> — analyse des profils et readiness via des outils de référence (Talent Reveal, Saville, Hogan).</li>
+        <li><strong>3️⃣ Scénarisation du plan de succession</strong> — élaboration de scénarios évolutifs (1 à 3 ans) intégrant les besoins de développement et la mobilité interne.</li>
+        <li><strong>4️⃣ Engagement du top management</strong> — construction d’une feuille de route partagée, confidentielle et actionnable.</li>
+      </ul>
+
+      <h3>✨ Bénéfices</h3>
+      <ul>
+        <li>Anticipation et sécurisation des transitions critiques.</li>
+        <li>Valorisation des talents internes et fidélisation accrue.</li>
+        <li>Leadership pipeline aligné sur la stratégie future.</li>
+        <li>Réduction des risques de rupture organisationnelle.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Laurent Riffault</strong> — Leading Partner, expert en gouvernance et transformation RH.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#succession-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne droite (photo) -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/b7B4hc7.jpeg" alt="Succession Planning – SBT Executive">
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

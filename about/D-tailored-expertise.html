@@ -1,0 +1,87 @@
+<!-- BLOC D – Nos expertises appliquées à vos problématiques -->
+<section class="sbt-block sbt-split" style="background:#F7F8FA;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:80px 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap;
+  ">
+    
+    <!-- Colonne image -->
+    <div class="sbt-image" style="flex:1 1 480px; min-width:320px; position:relative;">
+      <img src="https://i.imgur.com/2j5I0gn.png" 
+           alt="Nos expertises — SBT Executive" 
+           style="width:100%; height:auto; max-height:480px; object-fit:contain;
+                  border-radius:16px; box-shadow:0 10px 25px rgba(3,16,52,.12);
+                  filter:brightness(0.97) saturate(1.05);">
+    </div>
+
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display',serif;
+        font-size:34px; color:#031034; margin:0 0 16px;
+      ">
+        Nos expertises, appliquées à vos problématiques
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-intro" style="
+        font-size:18px; line-height:1.7; color:#2B2F3A; margin:0 0 20px;
+      ">
+        <strong>Recruter, développer, engager, préparer :</strong> chaque enjeu de leadership appelle une réponse sur-mesure.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="blocD-long" style="display:none;">
+        <p class="sbt-body" style="font-size:17px; line-height:1.8; color:#434A57; margin:0 0 28px;">
+          Nos <strong style="color:#45D1FF;">16 solutions</strong> s’articulent autour de quatre leviers clés,
+          conçus pour répondre à tous les enjeux du leadership moderne.  
+          Chez <strong style="color:#45D1FF;">SBT Executive</strong>, nous ne proposons pas de solutions toutes faites :  
+          nous agissons sur des problématiques concrètes, souvent complexes, toujours humaines.  
+          Identifier un profil rare, renforcer une gouvernance, préparer une succession, réaligner une équipe,
+          engager un collectif, faire évoluer une posture managériale ou intégrer un profil atypique…  
+          chaque mission est pensée avec exigence, sens du timing et une lecture fine des dynamiques humaines.  
+          <br><br>
+          Nos interventions reposent sur quatre logiques majeures :  
+          <strong style="color:#45D1FF;">Recruter</strong>, 
+          <strong style="color:#45D1FF;">Développer</strong>, 
+          <strong style="color:#45D1FF;">Engager</strong> et 
+          <strong style="color:#45D1FF;">Préparer</strong> — 
+          pour créer les conditions du leadership là où il compte vraiment.
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display:flex; gap:16px; flex-wrap:wrap;">
+        <button id="toggleBlocD" style="
+          background:none; border:1px solid #45D1FF; color:#45D1FF; font-weight:600;
+          cursor:pointer; padding:12px 28px; border-radius:36px; transition:.3s;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/our-services" class="sbt-button" style="
+          display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+          font-weight:600; padding:12px 28px; border-radius:36px; transition:.25s;
+        " onmouseover="this.style.background='#ffffff';" onmouseout="this.style.background='#45D1FF';">
+          Découvrir nos 4 axes d’intervention
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    const btn = document.getElementById('toggleBlocD');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        const longText = document.getElementById('blocD-long');
+        const isVisible = longText.style.display === 'block';
+        longText.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+      });
+    }
+  })();
+</script>

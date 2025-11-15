@@ -1,0 +1,80 @@
+<!-- BLOC E – Notre équipe d’experts (FR, avec emphases) -->
+<section class="sbt-block sbt-split" style="background:#FFFFFF;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:80px 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap; flex-direction:row-reverse;
+  ">
+
+    <!-- Colonne image -->
+    <div class="sbt-image" style="flex:1 1 520px; min-width:320px;">
+      <img src="https://i.imgur.com/K8qBCQt.jpeg"
+           alt="Notre équipe d’experts — SBT Executive"
+           style="width:100%; height:auto; max-height:520px; object-fit:cover;
+                  border-radius:16px; box-shadow:0 12px 30px rgba(3,16,52,.12);">
+    </div>
+
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display',serif;
+        font-size:34px; color:#031034; margin:0 0 16px;
+      ">
+        <strong>Une équipe d’experts complémentaires, engagés là où l’humain est stratégique</strong>
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-intro" style="font-size:18px; line-height:1.7; color:#2B2F3A; margin:0 0 20px;">
+        Dirigeants du secteur, anciens <strong>DRH</strong>, <strong>chasseurs de tête</strong>,
+        <strong>experts du leadership</strong>, <strong>coach·s accrédités</strong>…
+        notre équipe reflète la <strong>diversité des enjeux</strong> auxquels nos clients sont confrontés.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="blocE-long" style="display:none;">
+        <p class="sbt-body" style="font-size:17px; line-height:1.8; color:#434A57; margin:0 0 28px;">
+          Nos experts partagent un socle commun : une <strong>compréhension fine de la dynamique humaine</strong>
+          et une <strong>exigence opérationnelle élevée</strong>. Leurs parcours sont volontairement pluriels :
+          certains viennent du <strong>sport</strong>, de <strong>l’entertainment</strong> ou des <strong>loisirs</strong> ;
+          d’autres ont accompagné les <strong>plus grandes entreprises du CAC&nbsp;40</strong>.
+          Cette diversité nous permet d’apporter à chaque mission un <strong>regard juste</strong>,
+          équilibré entre <strong>connaissance du terrain</strong> et <strong>hauteur stratégique</strong>.
+          Nous intervenons <strong>là où l’humain fait la différence</strong>, avec une approche à la fois
+          <strong>humaine</strong>, <strong>stratégique</strong> et <strong>engagée</strong>.
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display:flex; gap:16px; flex-wrap:wrap;">
+        <button id="toggleBlocE" style="
+          background:none; border:1px solid #45D1FF; color:#45D1FF; font-weight:600;
+          cursor:pointer; padding:12px 28px; border-radius:36px; transition:.3s;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/experts" class="sbt-button" style="
+          display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+          font-weight:600; padding:12px 28px; border-radius:36px; transition:.25s;
+        " onmouseover="this.style.background='#ffffff';" onmouseout="this.style.background='#45D1FF';">
+          Découvrez nos experts
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    const btn = document.getElementById('toggleBlocE');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        const longText = document.getElementById('blocE-long');
+        const isVisible = longText.style.display === 'block';
+        longText.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+      });
+    }
+  })();
+</script>

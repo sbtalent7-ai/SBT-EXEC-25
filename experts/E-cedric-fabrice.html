@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc A – Cédric Le Nest & Fabrice Gatti | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --light:#F5F7FA; --dark:#2E3345;
+  --white:#FFFFFF; --pearl:#ECEFF4; --title:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:'Lato',sans-serif;color:var(--dark);background:var(--navy);
+}
+.section-wrapper{
+  padding:40px 0 10px;background:var(--white);
+}
+.section-title{
+  text-align:center;font-size:34px;font-weight:900;color:var(--cyan);
+  text-transform:uppercase;letter-spacing:1px;position:relative;margin:0 0 12px;
+}
+.section-title::before,.section-title::after{
+  content:"";display:inline-block;width:80px;height:2px;background:var(--cyan);
+  vertical-align:middle;margin:0 16px;
+}
+.section-subtitle{
+  text-align:center;font-size:16px;color:var(--dark);
+  max-width:720px;margin:0 auto 50px;line-height:1.6;
+}
+.experts-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  max-width:100%;margin:0;padding:20px 0 40px;
+  background:linear-gradient(180deg, #F5F7FA 0%, #E9EEF3 100%);
+  border-top:1px solid rgba(69,209,255,0.15);
+  border-bottom:1px solid rgba(69,209,255,0.15);
+}
+.profile-card{
+  width:48%;background:var(--pearl);border-radius:18px;
+  overflow:hidden;margin-bottom:20px;transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  position:relative;box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.profile-card::before{
+  content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;
+  box-shadow:0 0 0 rgba(69,209,255,0);transition:box-shadow .3s ease;
+}
+.profile-card:hover{
+  transform:translateY(-4px);box-shadow:0 12px 30px rgba(69,209,255,0.15);
+}
+.profile-card:hover::before{
+  box-shadow:0 0 24px rgba(69,209,255,0.35);
+}
+.profile-header{
+  background:var(--navy);padding:20px;color:var(--white);
+  box-shadow:0 0 40px rgba(69,209,255,.25) inset;position:relative;
+}
+.profile-photo{
+  position:absolute;top:20px;right:20px;width:130px;height:130px;object-fit:contain;
+  border:3px solid var(--cyan);border-radius:12px;background:var(--navy);
+  box-shadow:0 0 25px rgba(69,209,255,.45);
+}
+.profile-info{padding-right:170px;}
+.profile-info h1{margin:0;font-size:30px;font-weight:900;color:var(--white)}
+.profile-info h2{margin:6px 0 8px;font-size:18px;font-weight:700;color:var(--title)}
+.primary-expertise{font-size:15px;font-weight:900;color:var(--cyan)}
+.location{font-weight:700;color:#BFC7DA;margin-top:6px}
+.intro{
+  display:block;margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2);
+  font-size:15px;line-height:1.7;color:var(--white);
+  max-width:100%;
+}
+.intro strong{color:var(--white);font-weight:700;}
+.cta{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:12px;margin-top:18px}
+.cta a{
+  flex:1;background:var(--cyan);color:var(--navy);text-decoration:none;padding:10px 0;
+  text-align:center;border-radius:8px;font-weight:800;font-size:13px;transition:.18s;
+}
+.cta a:hover{background:var(--white);color:var(--navy)}
+.cta .toggle{
+  width:100%;margin-top:12px;background:none;border:1.6px solid var(--cyan);
+  color:var(--cyan);padding:10px 0;border-radius:8px;font-weight:900;font-size:13px;
+  cursor:pointer;text-align:center;
+}
+.cta .toggle:hover{background:var(--cyan);color:var(--navy)}
+.expand{display:none;background:var(--white);}
+.expand section{padding:20px 24px;border-bottom:1px solid #E6EBF2}
+.expand section:nth-child(even){background:#F7F8FB}
+.expand h3{
+  color:var(--cyan);font-weight:900;text-transform:uppercase;
+  margin:0 0 10px;text-shadow:0 0 10px rgba(69,209,255,.25);
+}
+.expand p,.expand li{font-size:14px;line-height:1.8;color:var(--dark)}
+.expand ul{list-style:none;padding:0;margin:8px 0 18px}
+.expand li::before{content:"▸ ";color:var(--cyan);font-weight:900}
+.close-row{text-align:center;margin:20px 0 30px}
+.close-row .toggle{border-color:#d3d8e2}
+@media(max-width:960px){
+  .profile-card{width:100%;}
+  .profile-header{padding:20px}
+  .profile-photo{position:relative;top:0;right:0;margin:0 auto 20px;display:block}
+  .profile-info{padding-right:0;text-align:center}
+  .cta a{flex:100%;}
+  .expand section{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+  <h2 class="section-title">Rencontrez nos experts</h2>
+  <p class="section-subtitle">
+    Un collectif international de spécialistes du sport, du leadership et de la transformation humaine, unis par une même exigence : allier performance et sens.
+  </p>
+</div>
+
+<div class="experts-grid">
+
+<!-- === CÉDRIC LE NEST === -->
+<div class="profile-card" id="cedric-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/txSP8vf.png" alt="Cédric Le Nest">
+    <div class="profile-info">
+      <h1>Cédric Le Nest</h1>
+      <h2>Managing Partner – Pilier “Attract”</h2> 
+      <span class="primary-expertise">| Executive Search & Leadership Advisory</span>
+      <p class="location">📍 Paris, France — 🌍 EMEA / Global</p>
+    </div>
+    <p class="intro">
+      <strong>Près de 20 ans d’expérience en Executive Search & Leadership Advisory</strong> pour les dirigeants du sport, de l’entertainment et du loisir.  
+      Il agit comme <strong>partenaire stratégique des comités exécutifs</strong> sur les enjeux de <strong>recrutement, de leadership et de performance organisationnelle</strong>, en alliant exigence, discrétion et impact.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/executive-search" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#cedric-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="cedric-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Fondateur et Managing Partner de SBT Executive</strong>, Cédric Le Nest accompagne depuis près de vingt ans les dirigeants et talents clés des secteurs du <strong>sport, de l’entertainment et du loisir</strong>. Expert reconnu en <strong>Executive Search</strong>, il défend une approche qui dépasse la simple chasse de tête pour y intégrer une <strong>dimension humaine, culturelle et organisationnelle</strong>.</p>
+      <p><em>« Notre rôle n’est pas seulement d’identifier les bons leaders — mais de créer, avec nos clients, les conditions qui leur permettent de réussir durablement. »</em></p>
+      <p><strong>Architecte du leadership</strong>, Cédric associe vision stratégique et compréhension humaine pour accompagner les conseils d’administration et les organisations dans leurs enjeux de gouvernance et de performance.  
+      À la tête de SBT Executive, il veille à ce que chaque mission reste centrée sur l’<strong>excellence du search</strong>, tout en intégrant les dimensions d’<strong>onboarding, d’intégration et de performance collective</strong>.</p>
+    </section>
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Executive Search & Leadership Advisory</li>
+        <li>Leadership & Talent Mapping</li>
+        <li>Executive Assessment</li>
+        <li>Onboarding & Intégration</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Expert international du recrutement de dirigeants</strong>, fondateur de <strong>SBT Executive</strong>, cabinet boutique dédié aux leaders du sport, de l’entertainment et des médias.</li>
+        <li><strong>Près de 20 ans d’expérience multilingue</strong> dans le conseil, le recrutement et l’accompagnement de dirigeants pour de grandes marques et organisations internationales.</li>
+        <li><strong>Architecte du leadership</strong> alliant rigueur, discernement et profondeur humaine pour renforcer la performance des exécutifs.</li>
+        <li><strong>Chef d’orchestre d’un réseau d’experts internationaux</strong>, dépassant le cadre du recrutement pour construire des succès durables entre leaders et organisations.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Références</h3>
+      <p><strong>Pour des raisons de confidentialité</strong>, seules quelques références illustratives sont mentionnées ci-dessous, témoignant de la portée internationale des missions menées par Cédric et son équipe.</p>
+      <ul>
+        <li>Comité International Olympique (CIO), World Rowing</li>
+        <li>Paris Saint-Germain, Inter Milan, Olympique de Marseille, LFP</li>
+        <li>Infront Sports & Media, Amaury Sport Organisation, UTMB Group</li>
+        <li>Under Armour, Salomon, ASICS</li>
+        <li>Olympic Broadcasting Services (OBS)</li>
+      </ul>
+    </section>
+    <div class="close-row">
+      <button class="toggle" data-target="#cedric-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+<!-- === FABRICE GATTI === -->
+<div class="profile-card" id="fabrice-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/tOagZFR.png" alt="Fabrice Gatti">
+    <div class="profile-info">
+      <h1>Fabrice Gatti</h1>
+      <h2>Leading Partner – Pilier “Perform”</h2> 
+      <span class="primary-expertise">| Board & Organisation Effectiveness</span>
+      <p class="location">📍 Bordeaux, France — 🌍 EMEA / Global</p>
+    </div>
+    <p class="intro">
+      <strong>25 ans d’expérience entre sport de haute performance (F1 – Red Bull / Renault Sport) et grandes organisations.</strong>  
+      Auteur et expert en <strong>performance organisationnelle</strong>, <strong>psychologie de la motivation</strong> et <strong>transformation managériale</strong>, il aide les dirigeants et leurs équipes à construire <strong>alignement, efficacité et engagement durable</strong>.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/board-organisation-effectiveness" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#fabrice-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="fabrice-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Coach exécutif, auteur et conférencier</strong>, Fabrice Gatti est <strong>Leading Partner</strong> chez <strong>SBT Executive</strong> et fondateur de <strong>Mamkel</strong>, cabinet dédié à la performance des organisations, des équipes et des dirigeants.  
+      Créateur du <strong>modèle C.R.A.F.T.</strong> — inspiré de la théorie de l’autodétermination (Deci & Ryan) — il aide les leaders à placer la motivation au cœur de la transformation managériale et de la performance collective.</p>
+      <p><em>Sa conviction :</em> la performance durable repose sur l’équilibre entre exigence, sens et épanouissement individuel.</p>
+    </section>
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Board & Strategic Alignment</li>
+        <li>Motivation & Performance</li>
+        <li>Team Efficiency & Executive Coaching</li>
+        <li>Psychologie de la motivation</li>
+        <li>Sociologie des organisations</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Plus de 20 ans d’expérience en direction marketing et commerciale</strong> (Red Bull, Renault F1, Oxbow, Infogrames).</li>
+        <li><strong>10 ans de conseil et de recherche en sciences humaines</strong> centrés sur la psychologie de la motivation et la sociologie des organisations.</li>
+        <li><strong>Créateur du modèle C.R.A.F.T.</strong> — une approche intégrée du leadership et de la motivation durable.</li>
+        <li><strong>Auteur, conférencier et expert invité</strong>, régulièrement sollicité sur les enjeux de motivation, d’engagement et de performance durable.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Références</h3>
+      <ul>
+        <li>Red Bull, Renault F1, McLaren, Oxbow, AS Monaco, ECA, World Rowing</li>
+        <li>Orange Business, Groupe La Poste, Safran, Novartis, BlackRock</li>
+      </ul>
+    </section>
+    <div class="close-row">
+      <button class="toggle" data-target="#fabrice-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc C – Kris Perquy & Tom Sears | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --light:#F5F7FA; --dark:#2E3345;
+  --white:#FFFFFF; --pearl:#ECEFF4; --title:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:'Lato',sans-serif;color:var(--dark);background:var(--navy);
+}
+.section-wrapper{
+  padding:40px 0 10px;background:var(--white);
+}
+.experts-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  max-width:100%;margin:0;padding:20px 0 40px;
+  background:linear-gradient(180deg, #F5F7FA 0%, #E9EEF3 100%);
+  border-top:1px solid rgba(69,209,255,0.15);
+  border-bottom:1px solid rgba(69,209,255,0.15);
+}
+.profile-card{
+  width:48%;background:var(--pearl);border-radius:18px;
+  overflow:hidden;margin-bottom:20px;transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  position:relative;box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.profile-card::before{
+  content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;
+  box-shadow:0 0 0 rgba(69,209,255,0);transition:box-shadow .3s ease;
+}
+.profile-card:hover{
+  transform:translateY(-4px);box-shadow:0 12px 30px rgba(69,209,255,0.15);
+}
+.profile-card:hover::before{
+  box-shadow:0 0 24px rgba(69,209,255,0.35);
+}
+.profile-header{
+  background:var(--navy);padding:20px;color:var(--white);
+  box-shadow:0 0 40px rgba(69,209,255,.25) inset;position:relative;
+}
+.profile-photo{
+  position:absolute;top:20px;right:20px;width:130px;height:130px;object-fit:contain;
+  border:3px solid var(--cyan);border-radius:12px;background:var(--navy);
+  box-shadow:0 0 25px rgba(69,209,255,.45);
+}
+.profile-info{padding-right:170px;}
+.profile-info h1{margin:0;font-size:30px;font-weight:900;color:var(--white)}
+.profile-info h2{margin:6px 0 8px;font-size:18px;font-weight:700;color:var(--title)}
+.primary-expertise{font-size:15px;font-weight:900;color:var(--cyan)}
+.location{font-weight:700;color:#BFC7DA;margin-top:6px}
+.intro{
+  display:block;margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2);
+  font-size:15px;line-height:1.7;color:var(--white);
+  max-width:100%;
+}
+.intro strong{color:var(--white);font-weight:700;}
+.cta{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:12px;margin-top:18px}
+.cta a{
+  flex:1;background:var(--cyan);color:var(--navy);text-decoration:none;padding:10px 0;
+  text-align:center;border-radius:8px;font-weight:800;font-size:13px;transition:.18s;
+}
+.cta a:hover{background:var(--white);color:var(--navy)}
+.cta .toggle{
+  width:100%;margin-top:12px;background:none;border:1.6px solid var(--cyan);
+  color:var(--cyan);padding:10px 0;border-radius:8px;font-weight:900;font-size:13px;
+  cursor:pointer;text-align:center;
+}
+.cta .toggle:hover{background:var(--cyan);color:var(--navy)}
+.expand{display:none;background:var(--white);}
+.expand section{padding:20px 24px;border-bottom:1px solid #E6EBF2}
+.expand section:nth-child(even){background:#F7F8FB}
+.expand h3{
+  color:var(--cyan);font-weight:900;text-transform:uppercase;
+  margin:0 0 10px;text-shadow:0 0 10px rgba(69,209,255,.25);
+}
+.expand p,.expand li{font-size:14px;line-height:1.8;color:var(--dark)}
+.expand ul{list-style:none;padding:0;margin:8px 0 18px}
+.expand li::before{content:"▸ ";color:var(--cyan);font-weight:900}
+.close-row{text-align:center;margin:20px 0 30px}
+.close-row .toggle{border-color:#d3d8e2}
+@media(max-width:960px){
+  .profile-card{width:100%;}
+  .profile-header{padding:20px}
+  .profile-photo{position:relative;top:0;right:0;margin:0 auto 20px;display:block}
+  .profile-info{padding-right:0;text-align:center}
+  .cta a{flex:100%;}
+  .expand section{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="experts-grid">
+
+<!-- === KRIS PERQUY === -->
+<div class="profile-card" id="kris-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/Pssq6uE.png" alt="Kris Perquy">
+    <div class="profile-info">
+      <h1>Kris Perquy</h1>
+      <h2>Senior Partner – Pilier « Develop »</h2>
+      <span class="primary-expertise">| Leadership Development</span>
+      <p class="location">📍 Bruxelles, Belgique — 🌍 EMEA / Global</p>
+    </div>
+    <p class="intro">
+      <strong>25 ans d’expérience comme psychologue du sport et coach en leadership</strong> auprès d’athlètes et de dirigeants de haut niveau.  
+      A collaboré avec la <strong>Fédération belge et ghanéenne de football, l’OTAN, Deloitte, VF Corporation et Fnatic</strong>, en reliant performance mentale et leadership exécutif.  
+      Considéré comme <strong>l’un des experts européens de référence en résilience et performance durable</strong>.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/leadership-development" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#kris-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="kris-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Kris Perquy</strong> est <strong>Senior Partner</strong> chez <strong>SBT Executive</strong> au sein du pilier <strong>Develop – Leadership Development</strong>.  
+      Psychologue du sport et coach mental, il accompagne depuis plus de <strong>25 ans</strong> des athlètes, entraîneurs et dirigeants dans le sport professionnel, l’eSport et l’entreprise.  
+      <strong>Auteur, conférencier et conseiller de dirigeants</strong>, Kris aide les leaders et leurs équipes à développer clarté mentale, cohésion collective et performance durable.</p>
+    </section>
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Coaching Exécutif & Leadership</li>
+        <li>Développement des équipes de haute performance</li>
+        <li>Psychologie du sport d’élite</li>
+        <li>Résilience mentale & performance durable</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>Expert international de la haute performance</strong> : accompagne depuis plus de 25 ans athlètes, équipes et dirigeants au plus haut niveau du sport et du business.</li>
+        <li><strong>Ancien Head of Performance Psychology</strong> à la Fédération belge de football et coach mental pour le Team Belgium – Be Gold Project (programme olympique d’excellence).</li>
+        <li><strong>Lead Psychologist</strong> de la Fédération ghanéenne de football, où il déploie des programmes nationaux de préparation mentale et de performance.</li>
+        <li><strong>Consultant et conférencier international</strong> pour l’OTAN, Deloitte, VF Corporation, Fnatic et Vlerick Business School, il met en lien psychologie du sport et leadership exécutif.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Références</h3>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Sport & Haute Performance</h4>
+      <ul><li>Fédération Belge de Football, Fédération Ghanéenne de Football, Team Belgium – Be Gold Project, Fnatic (eSport)</li></ul>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Entreprises & Institutions</h4>
+      <ul><li>OTAN, Deloitte, VF Corporation, Vlerick Business School</li></ul>
+    </section>
+    <div class="close-row">
+      <button class="toggle" data-target="#kris-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+<!-- === TOM SEARS === -->
+<div class="profile-card" id="tom-card">
+  <div class="profile-header">
+    <img class="profile-photo" src="https://i.imgur.com/NnorVxD.png" alt="Tom Sears">
+    <div class="profile-info">
+      <h1>Tom Sears</h1>
+      <h2>Senior Partner – Pilier « Attract »</h2>
+      <span class="primary-expertise">| Executive Search & Leadership Advisory</span>
+      <p class="location">📍 Londres, Royaume-Uni — 🌍 United Kingdom</p>
+    </div>
+    <p class="intro">
+      <strong>Plus de 25 ans d’expérience dans le leadership et la gouvernance du sport.</strong>  
+      Ancien CEO dans le rugby et le cricket, Tom dirige la practice Royaume-Uni de SBT Executive, où il accompagne conseils d’administration, fédérations et investisseurs sur les enjeux de recrutement de dirigeants, de leadership advisory et de développement du leadership pour des organisations telles que la FA, la Premier League et UK Sport.
+    </p>
+    <div class="cta">
+      <a href="https://calendly.com/clenest-sbt" target="_blank">💬 Discuter d’un enjeu stratégique</a>
+      <a href="/executive-search" target="_blank">💼 En savoir plus sur nos solutions</a>
+      <button class="toggle" data-target="#tom-expand">Voir le profil complet</button>
+    </div>
+  </div>
+
+  <div class="expand" id="tom-expand">
+    <section>
+      <h3>Biographie complète</h3>
+      <p><strong>Tom Sears</strong> est Senior Partner au sein de SBT Executive, où il pilote les activités du cabinet au Royaume-Uni.  
+      Fort de plus de 25 ans d’expérience dans le leadership sportif, la gouvernance et la direction exécutive, il accompagne boards, investisseurs et instances sportives dans le renforcement du leadership et la planification de la succession.  
+      Ancien CEO dans le rugby et le cricket professionnel, il a dirigé des organisations majeures telles que Connacht Rugby, New Zealand Cricket, Cricket Kenya et Derbyshire County Cricket Club.</p>
+    </section>
+    <section>
+      <h3>Domaines d’expertise</h3>
+      <ul>
+        <li>Executive Search & Leadership Advisory</li>
+        <li>Gouvernance & Planification de la succession</li>
+        <li>Leadership Development & Executive Coaching</li>
+        <li>Talent Mapping & Efficacité organisationnelle</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Profil & Expérience</h3>
+      <ul>
+        <li><strong>25+ ans d’expérience</strong> en direction et gouvernance dans le sport professionnel et les instances internationales.</li>
+        <li><strong>Ancien CEO</strong> de clubs et fédérations majeures : Connacht Rugby, New Zealand Cricket, Cricket Kenya et Derbyshire County Cricket Club.</li>
+        <li><strong>Conseiller en leadership</strong> auprès de conseils d’administration et d’investisseurs sur le recrutement stratégique et la gouvernance.</li>
+        <li><strong>Coach exécutif accrédité ILM/WABC</strong> et fondateur du Professional Body of Sports Leadership.</li>
+        <li><strong>Intervenant et conférencier international</strong> sur le leadership, la culture et la performance collective.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Références</h3>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Fédérations & Instances sportives</h4>
+      <ul><li>FA, Premier League, UK Sport, Formula One Management, British Surfing, World Netball, International Rugby League</li></ul>
+      <h4 style="margin:10px 0 6px;color:#061338;font-weight:900">Clubs & Organisations</h4>
+      <ul><li>Connacht Rugby, New Zealand Cricket, Cricket Kenya, Derbyshire County Cricket Club</li></ul>
+    </section>
+    <div class="close-row">
+      <button class="toggle" data-target="#tom-expand">▲ Fermer le profil</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- BLOC C – Nos modèles exclusifs au service du leadership (harmonisé) -->
+<section class="sbt-block sbt-split" style="background:#FFFFFF; padding:80px 0;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:0 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap; flex-direction:row-reverse;
+  ">
+    
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display',serif;
+        font-size:34px; color:#031034; margin:0 0 16px;
+      ">
+        Trois modèles complémentaires pour activer le leadership de demain
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-intro" style="
+        font-size:18px; line-height:1.7; color:#2B2F3A; margin:0 0 20px;
+      ">
+        Pour développer, engager et préparer les leaders à leur futur, 
+        nous mobilisons trois modèles exclusifs — 
+        <strong>Craft</strong>, <strong>Future</strong> et <strong>Co-Creative Communication</strong> — 
+        qui structurent notre approche du 
+        <span style="color:#45D1FF; font-weight:600;">Leadership Shift</span>.
+      </p>
+
+      <!-- Texte long (caché par défaut) -->
+      <div id="blocC-long" style="display:none;">
+        <p class="sbt-body" style="
+          font-size:17px; line-height:1.8; color:#434A57; margin:0 0 28px;
+        ">
+          Nos interventions s’appuient sur trois modèles développés avec des experts reconnus du leadership.  
+          <strong style="color:#45D1FF;">Craft</strong> renforce l’alignement stratégique, 
+          la performance collective et la cohésion des équipes.  
+          <strong style="color:#45D1FF;">Future</strong> aide les organisations à anticiper 
+          les transformations de leur secteur et à identifier les compétences clés de demain.  
+          <strong style="color:#45D1FF;">Co-Creative Communication</strong> facilite l’engagement 
+          des parties prenantes dans des environnements complexes, 
+          où l’adhésion est essentielle.  
+          <br><br>
+          Ensemble, ces trois modèles traduisent notre conviction : 
+          <em>le leadership n’est pas une posture, c’est une dynamique à structurer — 
+          humaine, stratégique et durable.</em>
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <button id="toggleBlocC" style="
+        background:none; border:none; color:#45D1FF; font-weight:600;
+        cursor:pointer; margin-bottom:24px;
+      " onclick="
+        const longText=document.getElementById('blocC-long');
+        longText.style.display = longText.style.display==='none' ? 'block' : 'none';
+        this.textContent = this.textContent==='En savoir plus' ? 'Réduire' : 'En savoir plus';
+      ">
+        En savoir plus
+      </button>
+      <br>
+
+      <!-- CTA principal -->
+      <a href="/our-methods" class="sbt-button" style="
+        display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+        font-weight:600; padding:12px 28px; border-radius:36px; transition:.25s;
+      " onmouseover="this.style.background='#ffffff';" onmouseout="this.style.background='#45D1FF';">
+        En savoir plus sur nos modèles
+      </a>
+    </div>
+
+    <!-- Colonne image (harmonisée) -->
+    <div class="sbt-image" style="
+      flex:1 1 480px; min-width:320px; position:relative; text-align:center;
+    ">
+      <img src="https://i.imgur.com/2g4xgUz.jpeg" alt="Nos modèles exclusifs — SBT Executive" style="
+        width:100%; height:auto; max-height:420px; object-fit:cover;
+        border-radius:16px; box-shadow:0 8px 20px rgba(3,16,52,.08);
+        filter:brightness(0.97) saturate(1.1);
+      ">
+    </div>
+
+  </div>
+</section>

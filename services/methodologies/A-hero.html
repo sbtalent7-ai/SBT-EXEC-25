@@ -1,0 +1,135 @@
+<!-- HERO – Nos méthodologies de leadership (Version FR) -->
+<section class="sbt-block sbt-hero" style="position: relative; overflow: hidden;">
+
+  <!-- Image de fond -->
+  <div class="sbt-bg" style="
+    background-image: url('https://i.imgur.com/oNNeJ0I.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.65);
+  "></div>
+
+  <!-- Overlay bleu -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 56, 0.55);
+  "></div>
+
+  <!-- Contenu -->
+  <div class="sbt-container" style="
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    color: #FFFFFF;
+  ">
+    <div class="sbt-text" style="
+      max-width: 780px;
+      backdrop-filter: blur(6px);
+      background: rgba(6, 19, 56, 0.35);
+      border-radius: 16px;
+      padding: 48px;
+    ">
+
+      <!-- Titre -->
+      <h2 class="sbt-title" style="
+        font-family: 'Playfair Display', serif;
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      ">
+        Nos méthodologies de leadership
+      </h2>
+
+      <!-- Texte court -->
+      <p class="sbt-short" style="
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #D9D9D9;
+        margin-bottom: 24px;
+      ">
+        Trois méthodologies de référence pour <strong style="color:#45D1FF;">structurer durablement le leadership</strong>.<br>
+        Chez <strong>SBT Executive</strong>, nous nous appuyons sur trois approches complémentaires conçues par nos experts — 
+        chacune incarnant un enjeu clé du leadership contemporain.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="longTextLeadershipFR" style="display: none; margin-bottom: 24px;">
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Le leadership ne s’impose plus : il se construit, s’incarne et se transmet.  
+          Face à la complexité croissante des organisations, nous mobilisons trois méthodologies reconnues, 
+          conçues comme des leviers de transformation humaine et durable.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          <strong style="color:#45D1FF;">CRAFT (pilier Engage)</strong> — développée par <strong>Fabrice Gatti</strong> — 
+          met l’accent sur la performance collective, la coopération et la motivation intrinsèque, 
+          recréant les conditions d’un engagement durable.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          <strong style="color:#45D1FF;">Co-Creative Communication® (pilier Develop)</strong> — conçue par <strong>Antoine Legonni</strong> — 
+          est une approche systémique et expérientielle du coaching, 
+          renforçant la conscience, la posture et l’impact des leaders au sein des équipes.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          <strong style="color:#45D1FF;">FUTURE (pilier Prepare)</strong> — développée par <strong>SBT Executive</strong> — 
+          aide les dirigeants à anticiper la continuité, la transmission et le développement des compétences d’avenir.
+        </p>
+
+        <p style="font-size: 17px; line-height: 1.8; color: #D9D9D9;">
+          Ensemble, ces trois méthodologies forment un cadre cohérent qui relie performance, sens et humanité.  
+          Elles traduisent notre conviction profonde : <strong style="color:#45D1FF;">le leadership est un art vivant</strong>, 
+          à la croisée du savoir-être, de la vision et du collectif.
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <button id="toggleTextBtnLeadershipFR" style="
+          background: transparent;
+          color: #45D1FF;
+          border: 1px solid #45D1FF;
+          padding: 10px 26px;
+          border-radius: 40px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="/our-methodologies" class="sbt-button" style="
+          background-color: #45D1FF;
+          color: #031034;
+          font-weight: 600;
+          padding: 10px 26px;
+          border-radius: 40px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ffffff';"
+           onmouseout="this.style.backgroundColor='#45D1FF';">
+          📘 Découvrir nos méthodologies
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    document.getElementById('toggleTextBtnLeadershipFR').addEventListener('click', function() {
+      const longText = document.getElementById('longTextLeadershipFR');
+      const isVisible = longText.style.display === 'block';
+      longText.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+    });
+  </script>
+</section>

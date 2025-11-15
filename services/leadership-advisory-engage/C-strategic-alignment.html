@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc D – Strategic Alignment | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA;
+  --dark:#2E3345;
+  --white:#FFFFFF;
+  --pearl:#ECEFF4; /* 🎨 Gris perle clair */
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--navy);
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--pearl); /* ✅ Fond gris perle */
+}
+.alignment-card{
+  background:var(--white); /* ✅ Carte blanche */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.alignment-left{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.alignment-left img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.alignment-right{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+  position:relative;
+}
+.alignment-right h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.alignment-right h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  margin:0 0 24px;
+}
+.alignment-right p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.alignment-right strong{color:var(--navy);}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .alignment-card{flex-direction:column;}
+  .alignment-right,.alignment-left{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+
+<div class="alignment-card">
+
+  <!-- Colonne image à gauche -->
+  <div class="alignment-left">
+    <img src="https://i.imgur.com/nUTvBMM.jpeg" alt="Strategic Alignment – SBT Executive">
+  </div>
+
+  <!-- Colonne texte -->
+  <div class="alignment-right">
+    <h1>Strategic Alignment</h1>
+    <h2>From vision to collective execution</h2>
+
+    <p><strong>Relier vision, gouvernance et exécution</strong> pour créer un impact collectif durable.</p>
+
+    <p>Aligner une organisation, ce n’est pas seulement partager une vision — c’est construire une compréhension commune de ce qui compte vraiment.  
+    Le programme <strong>Strategic Alignment</strong> aide les boards, comités exécutifs et équipes dirigeantes à transformer une intention stratégique en énergie collective, en reliant la gouvernance, le leadership et l’exécution opérationnelle.</p>
+
+    <button class="toggle" data-target="#alignement-expand">En savoir plus</button>
+
+    <div class="expand" id="alignement-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Vision partagée mais peu incarnée dans la gouvernance.</li>
+        <li>Décisions stratégiques déconnectées du terrain ou des priorités humaines.</li>
+        <li>Faible cohérence entre les rôles, la communication et les objectifs.</li>
+        <li>Difficulté à transformer la stratégie en mobilisation réelle.</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <p>Nous co-construisons l’alignement à travers des <strong>ateliers collaboratifs</strong>, la <strong>clarification des rôles et des priorités</strong> et la <strong>traduction visuelle des enjeux de leadership</strong>.  
+      Chaque mission aboutit à une <strong>feuille de route claire, partagée et activable</strong>, permettant à chaque dirigeant de comprendre où il crée de la valeur et comment contribuer au mouvement collectif.</p>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li>Une vision réellement incarnée dans la gouvernance et les décisions clés.</li>
+        <li>Des équipes dirigeantes alignées autour d’un langage et d’un cap communs.</li>
+        <li>Une communication fluide entre les niveaux de management et les instances décisionnelles.</li>
+        <li>Une exécution plus rapide, cohérente et engageante.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Fabrice Gatti</strong> — Leading Partner, expert en dynamiques collectives, sociologie des organisations et psychologie de la motivation.</li>
+        <li><strong>Laurent Riffault</strong> — Leading Partner.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange avec un expert</a>
+      </div>
+
+      <div class="cta">
+        <a href="#" target="_blank">📘 Découvrir notre méthodologie complète</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#alignement-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!-- BLOC B – Introduction éditoriale (Version finale avec nouveau titre) -->
+<section class="sbt-block sbt-split" style="background:#F7F8FA; padding:80px 0;">
+  <div class="sbt-container" style="
+    max-width:1200px; margin:0 auto; padding:0 24px;
+    display:flex; gap:48px; align-items:center; flex-wrap:wrap;
+  ">
+
+    <!-- Colonne texte -->
+    <div class="sbt-text" style="flex:1 1 520px; min-width:320px;">
+      <h2 class="sbt-title" style="
+        font-family:'Playfair Display', serif;
+        font-size:34px; color:#031034; margin:0 0 16px;
+      ">
+        Un collectif senior, pluriel et ancré dans vos univers
+      </h2>
+
+      <!-- Accroche principale -->
+      <p class="sbt-intro" style="
+        font-size:18px; line-height:1.7; color:#2B2F3A; margin:0 0 20px;
+      ">
+        Composé d’<strong>experts issus des secteurs du sport, de l’entertainment et du conseil</strong>, 
+        notre collectif réunit des <strong>profils expérimentés et reconnus</strong> — 
+        <strong>dirigeants</strong>, <strong>DRH</strong>, <strong>coachs de dirigeants</strong> et 
+        <strong>chasseurs de têtes expérimentés</strong> — qui comprennent vos problématiques 
+        et partagent un même engagement : 
+        <strong style="color:#45D1FF;">transformer la performance par l’humain</strong>.
+      </p>
+
+      <!-- Texte long (masqué par défaut) -->
+      <div id="blocB-long" style="display:none;">
+        <p class="sbt-body" style="
+          font-size:17px; line-height:1.8; color:#434A57; margin:0 0 28px;
+        ">
+          Ce collectif incarne l’alliance entre <strong>rigueur</strong>, 
+          <strong>expérience</strong> et <strong>diversité des parcours</strong>.  
+          Nos experts partagent une même exigence : comprendre les dynamiques humaines 
+          et organisationnelles pour accompagner les dirigeants là où les enjeux sont les plus critiques.  
+        </p>
+
+        <p class="sbt-body" style="
+          font-size:17px; line-height:1.8; color:#434A57; margin:0 0 28px;
+        ">
+          Leur diversité fait notre force : certains viennent du 
+          <strong>sport</strong>, de l’<strong>entertainment</strong> ou du 
+          <strong>conseil</strong>, d’autres du monde <strong>corporate</strong> ou 
+          <strong>académique</strong>.  
+          Ensemble, ils apportent une <strong>vision globale du leadership</strong> 
+          capable d’unir <strong>performance</strong>, <strong>impact</strong> et <strong>sens</strong>.
+        </p>
+
+        <p class="sbt-body" style="
+          font-size:17px; line-height:1.8; color:#434A57; margin:0 0 36px;
+        ">
+          Leur complémentarité alimente nos 
+          <strong style="color:#45D1FF;">quatre grandes pratiques</strong>, 
+          au cœur de l’offre <strong>SBT Executive</strong>, 
+          et nous permet d’activer le <strong>bon expert</strong> en fonction de chaque enjeu : 
+          recrutement stratégique, développement du leadership, 
+          accompagnement de transition ou transformation culturelle.
+        </p>
+      </div>
+
+      <!-- Boutons -->
+      <div class="sbt-buttons" style="display:flex; gap:16px; flex-wrap:wrap;">
+        <button id="toggleBlocB" style="
+          background:none; border:1px solid #45D1FF; color:#45D1FF; font-weight:600;
+          cursor:pointer; padding:12px 28px; border-radius:36px; transition:.3s;
+        " onmouseover="this.style.backgroundColor='#45D1FF'; this.style.color='#031034';"
+           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#45D1FF';">
+          En savoir plus
+        </button>
+
+        <a href="#team" class="sbt-button" style="
+          display:inline-block; background:#45D1FF; color:#031034; text-decoration:none;
+          font-weight:600; padding:12px 28px; border-radius:36px; transition:.25s;
+        " onmouseover="this.style.background='#ffffff';" onmouseout="this.style.background='#45D1FF';">
+          👉 Découvrir notre collectif
+        </a>
+      </div>
+    </div>
+
+    <!-- Colonne image -->
+    <div class="sbt-image" style="
+      flex:1 1 520px; min-width:320px; position:relative;
+    ">
+      <img src="https://i.imgur.com/8bOHKcL.png" 
+           alt="Notre Collectif d’Experts - SBT Executive" 
+           style="
+             width:100%; height:100%; max-height:520px; object-fit:cover;
+             border-radius:16px; box-shadow:0 12px 30px rgba(3,16,52,.12);
+           ">
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    const btn = document.getElementById('toggleBlocB');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        const longText = document.getElementById('blocB-long');
+        const isVisible = longText.style.display === 'block';
+        longText.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? 'En savoir plus' : 'Réduire';
+        if (!isVisible) {
+          setTimeout(() => {
+            document.querySelector('#team')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 300);
+        }
+      });
+    }
+  })();
+</script>
